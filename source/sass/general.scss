@@ -43,6 +43,7 @@ a {
 
 
 .h2 {
+  // position: relative;
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 36px;
@@ -50,9 +51,34 @@ a {
   font-weight: normal;
 
   &--decor {
+    display: flex;
+    align-items: center;
+
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
+
+    &::before,
+    &::after {
+      content: "";
+
+      flex-grow: 1;
+      flex-shrink: 0;
+
+      min-width: 20px;
+      height: 3px;
+
+      background: $primary;
+    }
+
+    &::before {
+      display: none;
+      margin-right: 20px;
+    }
+
+    &::after {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -62,4 +88,8 @@ a {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.bb {
+  border-bottom: 1px solid #d9d9d9;
 }

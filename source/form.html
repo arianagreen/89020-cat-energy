@@ -33,19 +33,22 @@
     </header>
 
     <main class="page-main form-page">
-      <h1 class="h1">Подбор программы</h1>
-      <p class="form-page__help">Заполните анкету и мы подберем программу для вашего кота</p>
+      <div class="form-page__header">
+        <h1 class="h1">Подбор программы</h1>
+        <p class="form-page__help">Заполните анкету и мы подберем программу для вашего кота</p>
+      </div>
+
       <section class="program-selection">
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__fieldset form__fieldset--no-legend">
+          <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
             <ul class="form__filter-wrapper">
               <li class="form__group form__group--text">
                 <label class="form__label" for="cat-name">Имя:<sup>*</sup></label>
-                <input class="form__input input-text" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+                <input class="form__input input-text" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
               </li>
               <li class="form__group form__group--text">
                 <label class="form__label" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-                <input class="form__input input-text" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+                <input class="form__input input-text" id="cat-weight" type="text" name="cat-weight" placeholder="7" required>
               </li>
               <li class="form__group form__group--text">
                 <label class="form__label" for="cat-age">Возраст&nbsp;(лет):<sup>*</sup></label>
@@ -53,25 +56,25 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--no-legend">
+          <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
             <ul class="form__filter-wrapper">
               <li class="form__group">
                 <label class="form__label radio">
-                  <input type="radio" class="visually-hidden" name="weight-loss" checked>
+                  <input type="radio" class="visually-hidden" name="goal" value="weight-loss" checked>
                   <span class="radio__indicator"></span>
                   Похудение
                 </label>
               </li>
               <li class="form__group">
                 <label class="form__label radio">
-                  <input type="radio" class="visually-hidden" name="weight-gain">
+                  <input type="radio" class="visually-hidden" name="goal" value="weight-gain">
                   <span class="radio__indicator"></span>
                   Набор массы
                 </label>
               </li>
               <li class="form__group ">
                 <label class="form__label radio">
-                  <input type="radio" class="visually-hidden" name="need-advice">
+                  <input type="radio" class="visually-hidden" name="goal" value="need-advice">
                   <span class="radio__indicator"></span>
                   Не знаю (нужен ваш совет)
                 </label>
@@ -79,24 +82,27 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend h2 h2--decor">Контактные данные (владельца кота)</legend>
+            <h2 class="form__legend h2 h2--decor">Контактные данные<br>(владельца кота)</h2>
             <ul class="form__filter-wrapper">
               <li class="form__group form__group--text">
                 <label class="form__label no-wrap" for="owner-email">E-mail:<sup>*</sup></label>
-                <input class="form__input input-text input-text--icon" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                <input class="form__input input-text input-text--icon input-text--email" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form__group form__group--text">
                 <label class="form__label" for="owner-tel">Телефон:<sup>*</sup></label>
-                <input class="form__input input-text input-text--icon" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+                <input class="form__input input-text input-text--icon input-text--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend h2 h2--decor">Комментарий</legend>
-            <textarea class="form__input input-text" name="cat-habits" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            <h2 class="form__legend h2 h2--decor">Комментарий</h2>
+            <p class="form__filter-wrapper">
+              <textarea class="form__input input-text" name="cat-habits" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            </p>
+
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend h2 h2--decor">Дополнительно</legend>
+            <h2 class="form__legend h2 h2--decor">Дополнительно</h2>
             <ul class="form__filter-wrapper">
               <li class="form__group">
                 <label class="form__label checkbox">
@@ -113,8 +119,8 @@
                 </label>
               </li>
               <li class="form__group">
-                <label class="form__label checkbox">
-                  <input type="checkbox" class="visually-hidden" name="need-advice">
+                <label class="form__label checkbox disabled">
+                  <input type="checkbox" class="visually-hidden" name="need-advice" disabled>
                   <span class="checkbox__indicator"></span>
                   Молоко
                 </label>
@@ -143,10 +149,13 @@
           <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBBjvUrVKB" height="363"></iframe>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBBjvUrVKB" height="363">
+        </div>
+        </iframe>
       </section> <!-- contacts -->
       <div class="page-footer__footer">
-        <a class="page-footer__logo page-footer__item">
+        <a class="page-footer__logo page-footer__item" href="index.html">
           <img class="page-footer__logo-img" src="../img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
         <div class="page-footer__social social page-footer__item">

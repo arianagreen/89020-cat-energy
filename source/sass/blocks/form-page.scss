@@ -1,4 +1,15 @@
+.form-page__header {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .form-page__help {
+  margin-top: 0;
   margin-bottom: 35px;
   text-transform: uppercase;
+}
+
+.form-page + .page-footer .contacts__info {
+  background-color: $secondary;
 }
