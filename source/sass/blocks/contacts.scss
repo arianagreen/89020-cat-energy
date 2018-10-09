@@ -1,0 +1,38 @@
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background-color: #fff;
+
+  p {
+    margin: 0;
+  }
+
+
+}
+
+.contacts__invitation {
+  min-width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  min-width: 140px;
+  font-family: $font-text;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__map {
+  min-height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  iframe {
+    width: 100%;
+    border: none;
+  }
+}

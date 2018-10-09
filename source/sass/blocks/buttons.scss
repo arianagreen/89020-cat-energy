@@ -1,0 +1,91 @@
+.button {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+  border: none;
+
+  transition: color .2s, background .2s;
+
+  &--primary {
+    color: #ffffff;
+    background-color: $primary;
+
+    &:hover,
+    &:focus {
+      background-color: darken($primary, 3%);
+    }
+
+    &:active {
+      background-color: darken($primary, 3%);
+      color: rgba(#fff, 0.3);
+    }
+  }
+
+  &--secondary {
+    color: #444444;
+    // background-color: $secondary;
+  }
+}
+
+.catalog-link {
+  position: relative;
+  padding-right: 58px;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: opacity .2s;
+
+
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 33px;
+    height: 11px;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+    background-image: url('../img/icon-right-arrow-long.svg');
+    background-repeat: no-repeat;
+    transition: opacity .2s;
+  }
+
+  &::after {
+    opacity: 0;
+    background-image: url('../img/icon-right-arrow-verylong.svg');
+  }
+
+  &:hover{
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+
+.link {
+  color: $text-color;
+  transition: opacity .2s, color .2s;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}

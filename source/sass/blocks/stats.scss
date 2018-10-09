@@ -1,0 +1,47 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  @include list-reset;
+  margin-bottom: 35px;
+}
+
+.stats__value {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+
+
+.stats__item {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 124px;
+  padding: 15px;
+
+  text-align: center;
+
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+
+}
+
+.stats__field {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: -16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background-color: $secondary;
+  font-size: 12px;
+  line-height: 12px;
+
+}
+
+
