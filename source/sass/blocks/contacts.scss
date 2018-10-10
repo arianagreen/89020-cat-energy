@@ -2,13 +2,10 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 20px;
-  background-color: #fff;
 
   p {
     margin: 0;
   }
-
-
 }
 
 .contacts__invitation {
@@ -35,4 +32,9 @@
     width: 100%;
     border: none;
   }
+}
+
+
+.index-page .contacts__info {
+  background-color: #fff;
 }

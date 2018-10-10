@@ -9,6 +9,7 @@
   line-height: 18px;
 
   text-transform: uppercase;
+  text-align: center;
   border: none;
 
   transition: color .2s, background .2s;
@@ -30,9 +31,20 @@
 
   &--secondary {
     color: #444444;
-    // background-color: $secondary;
+    background-color: $secondary;
+
+    &:hover,
+    &:focus {
+      background-color: darken($secondary, 3%);
+    }
+
+    &:active {
+      background-color: darken($secondary, 3%);
+      color: rgba(#444444, 0.3);
+    }
   }
 }
+
 
 .catalog-link {
   position: relative;
@@ -77,7 +89,9 @@
 
 
 .link {
+  font-family: $font;
   color: $text-color;
+  text-transform: uppercase;
   transition: opacity .2s, color .2s;
 
   &:hover,

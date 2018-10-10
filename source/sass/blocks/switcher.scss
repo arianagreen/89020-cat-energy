@@ -1,5 +1,43 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .switcher__text {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.switcher__wrapper {
+
+}
+
+.switcher__handle {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid $gray-darker;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $primary;
+    left: 5px;
+    top: 50%;
+    margin-top: -3px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }

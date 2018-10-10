@@ -25,10 +25,12 @@
 @import "blocks/copyright.scss";
 
 
-// form
+// form-page
 @import "blocks/form-page.scss";
 
-
-
-
-
+// catalog-page
+@import "blocks/catalog-page.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/show-more.scss";
+@import "blocks/catalog-extra-item.scss";

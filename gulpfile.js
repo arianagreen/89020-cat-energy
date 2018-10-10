@@ -24,7 +24,7 @@ gulp.task("css", function () {
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("source/build"));
 })
 
 gulp.task("server", function () {

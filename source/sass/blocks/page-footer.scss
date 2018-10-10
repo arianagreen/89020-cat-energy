@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $secondary;
+  margin-top: 35px;
 }
 
 .page-footer__footer {
@@ -20,4 +21,9 @@
   &:not(:last-child) {
     @include border;
   }
+}
+
+
+.index-page .page-footer {
+  margin-top: 0;
 }
