@@ -1,10 +1,4 @@
-.catalog-page {
-  .h1 {
-    margin-top: 20px;
-    margin-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 25px;
-    @include border;
-  }
+.catalog-page__heading {
+  padding-bottom: 25px;
+  @include border;
 }

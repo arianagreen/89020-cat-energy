@@ -4,9 +4,9 @@
 
 @import "general.scss";
 
-@import "blocks/buttons.scss";
-@import "blocks/forms.scss";
-@import "blocks/checkbox&radio.scss";
+@import "blocks/button.scss";
+@import "blocks/link.scss";
+@import "blocks/form.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -33,4 +33,3 @@
 @import "blocks/catalog.scss";
 @import "blocks/catalog-item.scss";
 @import "blocks/show-more.scss";
-@import "blocks/catalog-extra-item.scss";

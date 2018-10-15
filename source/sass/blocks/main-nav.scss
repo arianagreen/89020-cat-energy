@@ -11,8 +11,8 @@
   background-color: #fff;
   border: none;
 
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     content: '';
     position: absolute;
     height: 2px;

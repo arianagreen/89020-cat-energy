@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  padding: 12px 15px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  transition: color 0.2s, background 0.2s;
+
+  &--primary {
+    color: #ffffff;
+    background-color: $primary;
+
+    &:focus,
+    &:hover {
+      background-color: darken($primary, 3%);
+    }
+
+    &:active {
+      background-color: darken($primary, 3%);
+      color: rgba(#fff, 0.3);
+    }
+  }
+
+  &--secondary {
+    color: #444444;
+    background-color: $secondary;
+
+    &:focus,
+    &:hover {
+      background-color: darken($secondary, 3%);
+    }
+
+    &:active {
+      background-color: darken($secondary, 3%);
+      color: rgba(#444444, 0.3);
+    }
+  }
+}

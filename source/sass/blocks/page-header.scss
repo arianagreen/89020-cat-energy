@@ -8,9 +8,14 @@
 .page-header__logo {
   display: block;
   @include border;
-  padding-top: 11px;
-  padding-left: 20px;
-  padding-bottom: 16px;
-  padding-right: 66px;
+  padding: 11px 66px 16px 20px;
+  transition: opacity .2s;
 
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .6;
+  }
 }
