@@ -1,0 +1,21 @@
+.example {
+  background-color: $secondary;
+  padding: 25px 20px;
+}
+
+.example__stats {}
+
+.example__total {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: $font-text;
+  letter-spacing: 0.1px;
+}

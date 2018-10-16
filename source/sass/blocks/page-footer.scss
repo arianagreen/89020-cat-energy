@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: $secondary;
+  margin-top: 35px;
+}
+
+.page-footer__footer {
+  padding: 10px 20px 20px;
+}
+
+.page-footer__logo {
+  display: block;
+  text-align: center;
+}
+
+.page-footer__item {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:not(:last-child) {
+    @include border;
+  }
+}
+
+.index-page .page-footer {
+  margin-top: 0;
+}

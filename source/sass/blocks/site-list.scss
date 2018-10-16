@@ -1,0 +1,35 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__item {
+  a {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-color;
+    text-transform: uppercase;
+    @include border;
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgba($text-color, 0.6%);
+    }
+
+    &:active {
+      color: rgba($text-color, 0.3%);
+    }
+  }
+
+  &--active {
+    a {
+      &:active,
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+}

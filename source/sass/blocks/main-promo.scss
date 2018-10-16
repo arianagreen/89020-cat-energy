@@ -1,0 +1,26 @@
+.main-promo {
+  margin-bottom: 22px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient($primary 305px, #ffffff 60%);
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-promo__heading {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-promo__slogan {
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+}
