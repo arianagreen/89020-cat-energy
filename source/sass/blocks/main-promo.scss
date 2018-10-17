@@ -1,13 +1,16 @@
 .main-promo {
+  position: relative;
   margin-bottom: 22px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #fff;
-  text-align: center;
   background: linear-gradient($primary 305px, #ffffff 60%);
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.main-promo__content {
+  box-sizing: border-box;
+  padding-top: 30px;
+  color: #fff;
+  text-align: center;
 }
 
 .main-promo__heading {
@@ -18,9 +21,81 @@
 }
 
 .main-promo__slogan {
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin: 0;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+}
+
+.main-promo__button {
+  margin-top: 300px;
+}
+
+.main-promo__img {
+  position: absolute;
+  left: 50%;
+  bottom: 45px;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .main-promo {
+    margin-bottom: 0;
+    background: #fff;
+    // padding-left: 90px;
+  }
+
+  .main-promo__content {
+    position: relative;
+    z-index: 1;
+    padding-top: 0;
+    padding-left: 90px;
+    padding-right: 190px;
+    padding-bottom: 530px;
+    color: $text-color;
+    text-align: left;
+  }
+
+  .main-promo__heading {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-promo__button {
+    margin-top: 35px;
+  }
+
+  .main-promo__img {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-promo {
+    display: flex;
+    align-items: center;
+    height: 48vw;
+    margin-bottom: 80px;
+    background: linear-gradient(to right, #ffffff 50%, $primary 50%, $primary 100%);
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+  }
+
+  .main-promo__content {
+    width: 50%;
+    padding-left: 80px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
 }

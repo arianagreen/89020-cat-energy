@@ -53,3 +53,12 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .link {
+    &--to-catalog {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

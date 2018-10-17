@@ -38,3 +38,15 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    padding-right: 29px;
+  }
+
+}

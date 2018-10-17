@@ -19,3 +19,43 @@
     opacity: .6;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 60px;
+    padding-top: 24px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    display: flex;
+    align-items: center;
+    width: 192px;
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 54px;
+  }
+
+  .page-header__wrapper {
+    width: $desktop-content-width;
+  }
+
+  .page-header__logo {
+    width: 245px;
+  }
+}
