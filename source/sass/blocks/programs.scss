@@ -85,8 +85,6 @@
     padding-bottom: 0;
     border-bottom: none;
   }
-
-
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -96,6 +94,7 @@
     padding-top: 70px;
     padding-right: 280px;
     padding-left: 53px;
+    padding-bottom: 60px;
   }
 
   .programs__title {
@@ -112,15 +111,26 @@
       width: 200px;
     }
 
-    &--slim::after {
-      height: 194px;
-      margin-top: -12px;
+    &--slim {
+      &::after {
+        height: 194px;
+        margin-top: -12px;
+      }
+
     }
 
-    &--pro::after {
-      width: 268px;
-      right: 28px;
+    &--pro {
+      &::after {
+        width: 268px;
+        right: 28px;
+      }
+
+      & + .programs__text {
+        padding-right: 31px;
+      }
     }
+
+
   }
 }
 

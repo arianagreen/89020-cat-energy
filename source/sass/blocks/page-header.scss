@@ -44,11 +44,14 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    z-index: 2;
-    position: absolute;
-    top: 0;
     width: 100%;
     padding-top: 54px;
+
+    &--index {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+    }
   }
 
   .page-header__wrapper {

@@ -66,17 +66,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item {
-    a {
-      color: #fff;
-    }
-
-    &--active {
+  .site-list--light {
+    .site-list__item {
       a {
-        &::after {
-          background-color: #fff;
+        color: #fff;
+      }
+
+      &--active {
+        a {
+          &::after {
+            background-color: #fff;
+          }
         }
       }
     }
   }
+
 }
