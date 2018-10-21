@@ -18,10 +18,16 @@
     padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
-    padding-right: 285px;
   }
 
   .form-page ~ .page-footer .contacts {
     background: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__help {
+    width: $desktop-content-width;
+    padding-left: 0;
   }
 }

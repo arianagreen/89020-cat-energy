@@ -1,0 +1,43 @@
+.container {
+  display: block;
+  min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.col {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .row {
+    margin-left: -$tablet-padding;
+    margin-right: -$tablet-padding;
+  }
+
+  .col {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .row {
+    margin-left: -$desktop-padding;
+    margin-right: -$desktop-padding;
+  }
+
+  .col {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
+}

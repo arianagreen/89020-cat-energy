@@ -29,14 +29,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 70px;
+  }
+
   .page-footer__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .page-footer__item {
     border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .page-footer__social {
@@ -45,5 +53,11 @@
 
   .page-footer__logo {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 80px;
   }
 }

@@ -8,6 +8,10 @@
   border: none;
   transition: color 0.2s, background 0.2s;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &--primary {
     color: #ffffff;
     background-color: $primary;
