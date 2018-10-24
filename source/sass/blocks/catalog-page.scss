@@ -2,3 +2,9 @@
   padding-bottom: 25px;
   @include border;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-page__heading {
+    border-bottom: none;
+  }
+}

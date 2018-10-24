@@ -50,7 +50,7 @@
   }
 
   .contacts__info {
-    width: $tablet-content-width;
+    @include tablet-container;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 60px;
@@ -86,12 +86,14 @@
   }
 
   .contacts__info {
+    width: 43.85%;
+    max-width: 710px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     position: absolute;
     // width: 570px;
-    width: calc(#{$desktop-content-width} / 2 - #{$desktop-padding});
+    // width: calc(#{$desktop-content-width} / 2 - #{$desktop-padding});
     min-height: 200px;
     top: 50%;
     right: 50%;

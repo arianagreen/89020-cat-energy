@@ -1,0 +1,128 @@
+.extra-product {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  @include border;
+
+  &:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
+}
+
+.extra-product__content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.extra__description {
+  width: 100%;
+}
+
+.extra-product__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.extra-product__parameters {
+  width: 100%;
+  font-family: $font-text;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.extra-product__value {
+
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.extra-product__order {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-product {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    border-left: 1px solid $gray-darker;
+    border-right: 1px solid $gray-darker;
+  }
+
+  .extra-product__description {
+    display: flex;
+    align-items: center;
+  }
+
+  .extra-product__legend {
+    text-align: right;
+  }
+
+  .extra-product__value {
+    width: 30%;
+  }
+
+  .extra-product__title {
+    width: 50%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  .extra-product__parameters {
+    width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+
+    td {
+      padding: 0;
+    }
+  }
+
+  .extra-product__legend {
+  }
+
+  .extra-product__order {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-product {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .extra-product__description {
+    flex-grow: 1;
+  }
+
+  .extra-product__title {
+    // width: 29%;
+  }
+
+  .extra-product__parameters {
+    box-sizing: border-box;
+    padding-right: 40px;
+  }
+
+  .extra-product__order {
+    width: 27.4%;
+    margin-top: 0;
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
+}

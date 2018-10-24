@@ -7,3 +7,17 @@
 @mixin border {
   border-bottom: 1px solid #d9d9d9;
 }
+
+@mixin tablet-container {
+  width: 92.2%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin desktop-container {
+  width: 93.8%;
+  max-width: 1500px;
+}

@@ -34,59 +34,64 @@
 
     <main class="page-main form-page">
       <h1 class="h1 form-page__heading container">Подбор программы</h1>
-      <p class="form-page__help">Заполните анкету и мы подберем программу для вашего кота</p>
+      <p class="form-page__help">Заполните анкету и мы подберем <br> программу для вашего кота</p>
 
       <section class="program-selection">
+
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
-            <ul class="form__filter-wrapper">
-              <li class="form__group form__group--text">
-                <label class="form__label" for="cat-name">Имя:<sup>*</sup></label>
-                <input class="form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required="">
-              </li>
-              <li class="form__group form__group--text">
-                <label class="form__label" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
-                <input class="form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7" required="">
-              </li>
-              <li class="form__group form__group--text">
-                <label class="form__label" for="cat-age">Возраст&nbsp;(лет):<sup>*</sup></label>
-                <input class="form__input" id="cat-age" type="text" name="cat-age" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
-            <ul class="form__filter-wrapper form__filter-wrapper--frame">
-              <li class="form__group">
-                <label class="form__radio">
-                  <input type="radio" class="visually-hidden" name="goal" value="weight-loss" checked="">
-                  <span class="form__indicator form__indicator--radio"></span>
-                  Похудение
-                </label>
-              </li>
-              <li class="form__group">
-                <label class="form__radio">
-                  <input type="radio" class="visually-hidden" name="goal" value="weight-gain">
-                  <span class="form__indicator form__indicator--radio"></span>
-                  Набор массы
-                </label>
-              </li>
-              <li class="form__group">
-                <label class="form__radio">
-                  <input type="radio" class="visually-hidden" name="goal" value="need-advice">
-                  <span class="form__indicator form__indicator--radio"></span>
-                  Не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="container">
+            <div class="form__main">
+              <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
+                <ul class="form__filter-wrapper">
+                  <li class="form__group form__group--text">
+                    <label class="form__label" for="cat-name">Имя:<sup>*</sup></label>
+                    <input class="form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required="">
+                  </li>
+                  <li class="form__group form__group--text">
+                    <label class="form__label" for="cat-weight">Вес&nbsp;(кг):<sup>*</sup></label>
+                    <input class="form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7" required="">
+                  </li>
+                  <li class="form__group form__group--text">
+                    <label class="form__label" for="cat-age">Возраст&nbsp;(лет):<sup>*</sup></label>
+                    <input class="form__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
+                <ul class="form__filter-wrapper form__filter-wrapper--frame">
+                  <li class="form__group">
+                    <label class="form__radio">
+                      <input type="radio" class="visually-hidden" name="goal" value="weight-loss" checked="">
+                      <span class="form__indicator form__indicator--radio"></span>
+                      Похудение
+                    </label>
+                  </li>
+                  <li class="form__group">
+                    <label class="form__radio">
+                      <input type="radio" class="visually-hidden" name="goal" value="weight-gain">
+                      <span class="form__indicator form__indicator--radio"></span>
+                      Набор массы
+                    </label>
+                  </li>
+                  <li class="form__group">
+                    <label class="form__radio">
+                      <input type="radio" class="visually-hidden" name="goal" value="need-advice">
+                      <span class="form__indicator form__indicator--radio"></span>
+                      Не знаю (нужен ваш совет)
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+
           <h2 class="h2 h2--decor">
             <span class="h2__content">
               <span class="h2__text">Контактные данные (владельца кота)</span>
             </span>
           </h2>
-          <fieldset class="form__fieldset">
-
-            <ul class="form__filter-wrapper">
+          <fieldset class="form__fieldset form__fieldset">
+            <ul class="form__filter-wrapper form__filter-wrapper--owner">
               <li class="form__group form__group--text">
                 <label class="form__label no-wrap" for="owner-email">E-mail:<sup>*</sup></label>
                 <input class="form__input form__input--icon form__input--icon-email" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required="">
@@ -175,7 +180,7 @@
           <iframe src="https://yandex.ru/map-widget/v1/-/CBBjvUrVKB" height="363"></iframe>
         </div>
       </section> <!-- contacts -->
-      <div class="page-footer__footer">
+      <div class="page-footer__footer container">
         <a class="page-footer__logo page-footer__item" href="index.html">
           <img class="page-footer__logo-img" src="../img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>

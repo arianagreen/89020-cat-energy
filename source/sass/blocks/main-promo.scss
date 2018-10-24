@@ -45,11 +45,15 @@
     // padding-left: 90px;
   }
 
+  .main-promo__wrapper {
+    @include tablet-container;
+  }
+
   .main-promo__content {
     position: relative;
     z-index: 1;
     padding-top: 0;
-    padding-left: 90px;
+    padding-left: 12.7%;
     padding-right: 190px;
     padding-bottom: 530px;
     color: $text-color;
@@ -88,6 +92,10 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 50%;
+  }
+
+  .main-promo__wrapper {
+    @include desktop-container;
   }
 
   .main-promo__content {

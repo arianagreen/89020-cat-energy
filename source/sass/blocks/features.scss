@@ -1,7 +1,10 @@
 .features {
-  // padding-left: 20px;
-  // padding-right: 20px;
   margin-bottom: 40px;
+}
+
+.features__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .features__heading {
@@ -13,6 +16,7 @@
 }
 
 .features__item {
+  min-height: 60px;
   position: relative;
   margin-bottom: 20px;
   padding-left: 80px;
@@ -52,6 +56,10 @@
     @include border;
     margin-bottom: 45px;
     padding-bottom: 60px;
+  }
+
+  .features__wrapper {
+    @include tablet-container;
   }
 
   .features__list {
@@ -116,6 +124,15 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .features {
+    border-bottom: none;
+  }
+
+  .features__wrapper {
+    @include desktop-container;
+  }
+
   .features__list {
     margin-left: -40px;
     margin-right: -40px;

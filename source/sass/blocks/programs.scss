@@ -69,6 +69,9 @@
 
   .programs {
     margin-bottom: 50px;
+    @include tablet-container;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .programs__item {
@@ -135,6 +138,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    @include desktop-container;
+  }
   .programs__list {
     display: flex;
     margin-left: -40px;

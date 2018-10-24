@@ -4,9 +4,15 @@
   padding-bottom: 25px;
 }
 
+.example__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .example__stats {}
 
 .example__total {
+  margin-top: 38px;
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 20px;
@@ -28,7 +34,12 @@
 @media (min-width: $tablet-width) {
   .example {
     padding-top: 0;
-    background: linear-gradient(to top, $secondary 460px, transparent 460px, transparent 100%);
+    background: #fff;
+    // background: linear-gradient(to top, $secondary 460px, transparent 460px, transparent 100%);
+  }
+
+  .example__wrapper {
+    @include tablet-container;
   }
 
   .example__info {
@@ -66,4 +77,52 @@
   .example__demo {
     margin-top: 85px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-bottom: 0;
+  }
+
+  .example__wrapper {
+    @include desktop-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .h2 {
+      width: 100%;
+    }
+  }
+
+  .example__stats {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .example__info {
+    flex-wrap: wrap;
+    width: calc(450/1220 * 100%);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    // background-color: $secondary;
+  }
+
+  .example__total {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .example__demo {
+    width: calc(650/1220 * 100%);
+  }
+
+  .example__price {
+    display: inline;
+    margin-top: 0;
+    margin-left: 65px;
+  }
+
+
 }
