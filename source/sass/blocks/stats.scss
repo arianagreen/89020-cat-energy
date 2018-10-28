@@ -75,6 +75,7 @@
   }
 
   .stats__field-text {
+    background-color: #ffffff;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -88,5 +89,9 @@
 
   .stats__item {
     margin-right: 40px;
+  }
+
+  .stats__field-text {
+    background-color: $secondary;
   }
 }

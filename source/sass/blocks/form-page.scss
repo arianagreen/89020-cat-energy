@@ -1,5 +1,3 @@
-.form-page__heading {}
-
 .form-page__help {
   box-sizing: border-box;
   margin-top: 0;
@@ -11,9 +9,13 @@
 
 @media (min-width: $tablet-width) {
   .form-page__help {
-    width: $tablet-content-width;
-    margin-left: auto;
-    margin-right: auto;
+    @include tablet-container;
+  }
+
+  .form-page__help {
+    // width: $tablet-content-width;
+    // margin-left: auto;
+    // margin-right: auto;
     margin-bottom: 60px;
     padding-left: 40px;
     font-size: 20px;
@@ -27,7 +29,11 @@
 
 @media (min-width: $desktop-width) {
   .form-page__help {
-    width: $desktop-content-width;
+    @include desktop-container;
+  }
+
+  .form-page__help {
+    // width: $desktop-content-width;
     padding-left: 0;
   }
 }

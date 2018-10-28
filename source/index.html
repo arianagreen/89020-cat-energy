@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+    // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="index-page">
     <header class="page-header page-header--index">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Магазин Cat Energy">
+          <picture class="page-header__logo-image">
+            <source media="(min-width: 1300px)"
+                    srcset="../img/logo-desktop.svg">
+            <source media="(min-width: 768px)"
+                    srcset="../img/logo-tablet.svg">
+            <img src="../img/logo-mobile.svg" width="198" height="38" alt="Магазин Cat Energy">
+          </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list site-list--light">
@@ -41,7 +52,13 @@
             <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
             <a href="form.html" class="main-promo__button button button--primary">Подобрать программу</a>
           </div>
-          <img class="main-promo__img" src="../img/index-can-mobile@1x.png" alt="Cat Energy Курица">
+          <picture class="main-promo__img">
+            <source media="(min-width: 1300px)"
+                    srcset="../img/index-can-desktop@1x.png">
+            <source media="(min-width: 768px)"
+                    srcset="../img/index-can-tablet@1x.jpg">
+            <img src="../img/index-can-mobile@1x.png" alt="Кот после">
+          </picture>
         </div>
       </section>
 
@@ -88,35 +105,49 @@
       </section> <!-- features -->
 
       <section class="example">
-        <div class="example__wrapper">
-          <h2 class="h2">Живой пример</h2>
-          <div class="example__info">
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <ul class="example__stats stats">
-              <li class="stats__item">
-                <p class="stats__value">5 кг</p>
-                <p class="stats__field"><span class="stats__field-text">снижение веса</span></p>
-              </li>
-              <li class="stats__item">
-                <p class="stats__value">60 дней</p>
-                <p class="stats__field"><span class="stats__field-text">затрачено времени</span></p>
-              </li>
-            </ul>
-            <p class="example__total">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
-          </div>
-          <div class="example__demo demo">
-            <p class="demo__photo-wrapper">
-              <img src="../img/before-mobile@1x.png" alt="Кот до" class="demo__photo demo__photo--before">
-              <img src="../img/after-mobile@1x.png" alt="Кот после" class="demo__photo demo__photo--after">
-            </p>
-            <div class="demo__switcher switcher">
-              <span class="switcher__control">Было</span>
-              <div class="switcher__wrapper">
-                <div class="switcher__handle"></div>
-              </div>
-              <span class="switcher__control">Стало</span>
+        <h2 class="h2">Живой пример</h2>
+        <div class="example__content">
+          <div class="example__wrapper">
+            <div class="example__info">
+              <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <ul class="example__stats stats">
+                <li class="stats__item">
+                  <p class="stats__value">5 кг</p>
+                  <p class="stats__field"><span class="stats__field-text">снижение веса</span></p>
+                </li>
+                <li class="stats__item">
+                  <p class="stats__value">60 дней</p>
+                  <p class="stats__field"><span class="stats__field-text">затрачено времени</span></p>
+                </li>
+              </ul>
+              <p class="example__total">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
             </div>
-          </div><!-- example__demo -->
+            <div class="example__comparison comparison">
+              <div class="comparison__img-wrapper">
+                <picture class="comparison__img comparison__img--after">
+                  <source media="(min-width: 1300px)"
+                          srcset="../img/after-desktop@1x.png">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/after-tablet@1x.png">
+                  <img src="../img/after-mobile@1x.png" alt="Кот после">
+                </picture>
+                <picture class="comparison__img comparison__img--before comparison__img--overlay">
+                  <source media="(min-width: 1300px)"
+                  srcset="../img/before-desktop@1x.png">
+                  <source media="(min-width: 768px)"
+                  srcset="../img/before-tablet@1x.png">
+                  <img src="../img/before-mobile@1x.png" alt="Кот до">
+                </picture>
+              </div>
+              <div class="comparison__switcher">
+                <span class="comparison__control">Было</span>
+                <div class="comparison__handle-wrapper">
+                  <div class="comparison__handle"></div>
+                </div>
+                <span class="comparison__control">Стало</span>
+              </div>
+            </div><!-- example__comparison -->
+          </div>
         </div><!-- container -->
      </section> <!-- example -->
    </main>
@@ -136,7 +167,7 @@
           </p>
         </div>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBBjvUrVKB" height="363"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540658631440"></iframe>
         </div>
       </section> <!-- contacts -->
       <div class="page-footer__footer">
@@ -174,5 +205,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/comparison.js"></script> -->
   </body>
 </html>

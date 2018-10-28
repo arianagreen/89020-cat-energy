@@ -1,9 +1,22 @@
 .main-promo {
   position: relative;
   margin-bottom: 22px;
-  background: linear-gradient($primary 305px, #ffffff 60%);
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  // background: linear-gradient($primary 305px, #ffffff 60%);
+
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 63%;
+    background-color: #63a73a;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .main-promo__content {
@@ -32,17 +45,24 @@
 }
 
 .main-promo__img {
+  width: 280px;
+  height: 271px;
   position: absolute;
   left: 50%;
   bottom: 45px;
   transform: translateX(-50%);
 }
 
+
 @media (min-width: $tablet-width) {
   .main-promo {
     margin-bottom: 0;
     background: #fff;
     // padding-left: 90px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .main-promo__wrapper {
@@ -61,7 +81,7 @@
   }
 
   .main-promo__heading {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -72,14 +92,19 @@
   }
 
   .main-promo__button {
-    margin-top: 35px;
+    margin-top: 45px;
   }
 
   .main-promo__img {
-    top: 50%;
-    transform: translateY(-50%);
+    width: 709px;
+    height: 609px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
+
+
 
 @media (min-width: $desktop-width) {
   .main-promo {
@@ -87,15 +112,29 @@
     align-items: center;
     height: 48vw;
     margin-bottom: 80px;
-    background: linear-gradient(to right, #ffffff 50%, $primary 50%, $primary 100%);
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 50%;
+    // background: linear-gradient(to right, #ffffff 50%, $primary 50%, $primary 100%);
+    // background-image: url("../img/index-background-desktop@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: right top;
+    // background-size: 50%;
+
+    &::before {
+      z-index: auto;
+      display: block;
+      left: 50%;
+      height: 100%;
+      background-size: cover;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
   }
 
   .main-promo__wrapper {
     @include desktop-container;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 60px;
   }
 
   .main-promo__content {
@@ -104,6 +143,18 @@
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
+  }
+
+  .main-promo__img {
+    transform: none;
+    width: 552px;
+    height: 499px;
+
+    position: relative;
+    left: auto;
+    top: 30px;
+    bottom: auto;
+    right: 12.5%;
   }
 
 }

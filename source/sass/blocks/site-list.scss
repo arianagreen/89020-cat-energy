@@ -14,10 +14,8 @@
     text-transform: uppercase;
     @include border;
     transition: opacity 0.2s;
-  }
 
-  &:not(&--active) {
-    a {
+    &[href] {
       &:hover {
         opacity: 0.6;
       }

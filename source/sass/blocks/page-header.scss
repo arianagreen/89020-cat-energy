@@ -8,16 +8,25 @@
 .page-header__logo {
   display: block;
   @include border;
+
   padding: 11px 66px 16px 20px;
   transition: opacity .2s;
 
-  &:hover {
-    opacity: .8;
-  }
+  &[href] {
+    cursor: pointer;
+    &:hover {
+      opacity: .8;
+    }
 
-  &:active {
-    opacity: .6;
+    &:active {
+      opacity: .6;
+    }
   }
+}
+
+.page-header__logo-image {
+  width: 192px;
+  height: 38px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +48,14 @@
     padding: 0;
     border-bottom: none;
   }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
 }
+
+
 
 @media (min-width: $desktop-width) {
   .page-header {
@@ -58,6 +74,13 @@
   }
 
   .page-header__logo {
-    width: 245px;
+    width: 20%;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
+    position: relative;
+    top: -3px;
   }
 }

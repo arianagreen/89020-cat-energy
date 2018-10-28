@@ -1,0 +1,237 @@
+.comparison__img-wrapper {
+  text-align: center;
+}
+
+.comparison__img {
+  display: inline-block;
+  height: 240px;
+
+  &--after {
+    display: none;
+  }
+
+  &--overlay {
+    // display: none;
+  }
+}
+.comparison__switcher {
+  display: flex;
+  max-width: 280px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.comparison__control {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.switcher__wrapper {
+
+}
+
+.comparison__handle {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid $gray-darker;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $primary;
+    left: 5px;
+    top: 50%;
+    margin-top: -3px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comparison {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+    }
+
+    &::before {
+      left: 0;
+      right: 50%;
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      left: 50%;
+      right: 0;
+      background-color: #eaeaea;
+    }
+  }
+
+  .comparison__img-wrapper {
+    z-index: 1;
+    position: relative;
+    height: 640px;
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comparison__img {
+    position: absolute;
+
+    // width: auto;
+    height: 100%;
+    left: 0;
+    right: 0;
+    // padding-bottom: 115px;
+    overflow: hidden;
+
+    &--before {
+      background: linear-gradient(to top, #f2f2f2, #f2f2f2 80%, #ffffff 80%, #ffffff);
+    }
+
+    &--after {
+      display: block;
+      background: linear-gradient(to top, #eaeaea, #eaeaea 80%, #ffffff 80%, #ffffff);
+    }
+
+    &--overlay {
+      width: 50%;
+    }
+
+    img {
+      // position: absolute;
+      bottom: 110px;
+      // left: 50%;
+      display: block;
+      width: 690px;
+      max-width: initial;
+      height: auto;
+      vertical-align: middle;
+      margin-left: -20px;
+      // transform: translateX(-50%);
+    }
+  }
+
+  .comparison {
+    justify-content: center;
+
+  }
+
+  .comparison__switcher {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    bottom: 65px;
+    max-width: 570px;
+    margin-top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .comparison__handle-wrapper {
+    width: 428px;
+    height: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+  }
+
+  .comparison__handle {
+    box-sizing: border-box;
+    height: 34px;
+    width: 34px;
+    left: 50%;
+    margin-left: -17px;
+    top: -14px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .2s, border .2s;
+
+    &:hover {
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $primary;
+      box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      left: 50%;
+      top: 50%;
+      margin-top: -4px;
+      margin-left: -4px;
+      border-radius: 50%;
+    }
+  }
+
+  .comparison__control {
+    width: 50px;
+    font-size: 20px;
+    line-height: 26px;
+    // text-decoration: underline dotted;
+    border-bottom: 1px dotted rgba($text-color, .23);
+    transition: border .2s;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      border-bottom: 1px solid rgba($text-color, .4);
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparison {
+    height: 652px;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .comparison__img-wrapper {
+    height: 652px;
+  }
+
+  .comparison__img {
+    &--before {
+      background: linear-gradient(to top, #f2f2f2, #f2f2f2 452px, #ffffff 452px, #ffffff);
+    }
+
+    &--after {
+      background: linear-gradient(to top, #eaeaea, #eaeaea 452px, #ffffff 452px, #ffffff);
+    }
+  }
+
+  .comparison__switcher {
+    bottom: 70px;
+  }
+}
