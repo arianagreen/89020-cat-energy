@@ -6,6 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body>
     <header class="page-header">
@@ -13,7 +18,7 @@
         <a href="index.html" class="page-header__logo">
           <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Магазин Cat Energy">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -33,15 +38,15 @@
     </header>
 
     <main class="page-main form-page">
-      <h1 class="h1 form-page__heading container">Подбор программы</h1>
+      <h1 class="h1 page-heading">Подбор программы</h1>
       <p class="form-page__help">Заполните анкету и мы подберем <br> программу для вашего кота</p>
 
       <section class="program-selection">
 
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="container">
-            <div class="form__main">
-              <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
+          <div class="form__main">
+            <div class="form__wrapper">
+              <fieldset class="form__fieldset form__fieldset--bb">
                 <ul class="form__filter-wrapper">
                   <li class="form__group form__group--text">
                     <label class="form__label" for="cat-name">Имя:<sup>*</sup></label>
@@ -57,7 +62,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--no-legend form__fieldset--bb">
+              <fieldset class="form__fieldset form__fieldset--bb">
                 <ul class="form__filter-wrapper form__filter-wrapper--frame">
                   <li class="form__group">
                     <label class="form__radio">
@@ -90,7 +95,7 @@
               <span class="h2__text">Контактные данные (владельца кота)</span>
             </span>
           </h2>
-          <fieldset class="form__fieldset form__fieldset">
+          <fieldset class="form__fieldset">
             <ul class="form__filter-wrapper form__filter-wrapper--owner">
               <li class="form__group form__group--text">
                 <label class="form__label no-wrap" for="owner-email">E-mail:<sup>*</sup></label>
@@ -109,7 +114,7 @@
           </h2>
           <fieldset class="form__fieldset">
             <p class="form__filter-wrapper">
-              <textarea class="form__input" name="cat-habits" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+              <textarea class="form__input" name="cat-habits" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
 
@@ -150,7 +155,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__footer container">
+          <div class="form__footer">
             <div class="form__footer-content">
               <p class="form__submit-wrapper">
                 <button class="form__submit button button--primary" type="submit">Отправить заявку</button>
@@ -177,7 +182,7 @@
           </p>
         </div>
         <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBBjvUrVKB" height="363"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540658631440"></iframe>
         </div>
       </section> <!-- contacts -->
       <div class="page-footer__footer container">

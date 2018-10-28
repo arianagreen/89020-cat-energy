@@ -47,7 +47,7 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav {
-    max-width: 72%;
+
     &--closed {
       .main-nav__wrapper {
         visibility: hidden;
@@ -77,7 +77,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    // width: 516px;
+    max-width: 72%;
   }
 
   .main-nav__toggle {
