@@ -1,7 +1,10 @@
 .features {
+  margin-bottom: 40px;
+}
+
+.features__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 40px;
 }
 
 .features__heading {
@@ -13,6 +16,7 @@
 }
 
 .features__item {
+  min-height: 60px;
   position: relative;
   margin-bottom: 20px;
   padding-left: 80px;
@@ -44,5 +48,105 @@
 
   &--changes::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    @include border;
+    margin-bottom: 45px;
+    padding-bottom: 60px;
+  }
+
+  .features__wrapper {
+    @include tablet-container;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // margin-right: -60px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -90px;
+  }
+
+  .features__item {
+    flex-grow: 1;
+    box-sizing: border-box;
+    // width: 324px;
+    width: 50%;
+    min-height: 228px;
+    // margin-right: 60px;
+    // padding-left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 90px;
+    padding-top: 115px;
+    padding-right: 14%;
+
+    &::before {
+      left: 30px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      left: 126px;
+      top: 0;
+      font-family: $font;
+      font-size: 281px;
+      line-height: 228px;
+      color: #f2f2f2;
+    }
+
+    &--benefit::after {
+      content: "1";
+    }
+
+    &--cooking::after {
+      content: "2";
+    }
+
+    &--meal::after {
+      content: "3";
+    }
+
+    &--changes::after {
+      content: "4";
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .features {
+    border-bottom: none;
+  }
+
+  .features__wrapper {
+    @include desktop-container;
+  }
+
+  .features__list {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  .features__item {
+    // width: 245px;
+    width: 25%;
+    // margin-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &::before {
+      left: 40px;
+    }
   }
 }

@@ -1,9 +1,39 @@
-.form-page__heading {}
-
 .form-page__help {
-  padding-left: 20px;
-  padding-right: 20px;
+  box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__help {
+    @include tablet-container;
+  }
+
+  .form-page__help {
+    // width: $tablet-content-width;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-bottom: 60px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-page ~ .page-footer .contacts {
+    background: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__help {
+    @include desktop-container;
+  }
+
+  .form-page__help {
+    // width: $desktop-content-width;
+    padding-left: 0;
+  }
 }

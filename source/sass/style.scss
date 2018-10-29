@@ -1,5 +1,9 @@
+@import "normalize.scss";
+@import "font.scss";
 @import "variables.scss";
 @import "mixins.scss";
+
+// @import "grid.scss";
 
 
 @import "general.scss";
@@ -16,7 +20,7 @@
 @import "blocks/features.scss";
 @import "blocks/example.scss";
 @import "blocks/stats.scss";
-@import "blocks/switcher.scss";
+@import "blocks/comparison.scss";
 
 // footer
 @import "blocks/page-footer.scss";
@@ -31,5 +35,6 @@
 // catalog-page
 @import "blocks/catalog-page.scss";
 @import "blocks/catalog.scss";
-@import "blocks/catalog-item.scss";
+@import "blocks/main-product.scss";
+@import "blocks/extra-product.scss";
 @import "blocks/show-more.scss";

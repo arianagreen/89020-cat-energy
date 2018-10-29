@@ -13,23 +13,71 @@
     color: $text-color;
     text-transform: uppercase;
     @include border;
-    transition: color 0.2s;
+    transition: opacity 0.2s;
 
-    &:hover {
-      color: rgba($text-color, 0.6%);
-    }
-
-    &:active {
-      color: rgba($text-color, 0.3%);
-    }
-  }
-
-  &--active {
-    a {
-      &:active,
+    &[href] {
       &:hover {
-        color: $text-color;
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
       }
     }
   }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    a {
+      padding: 0;
+      position: relative;
+      border-bottom: none;
+      // padding-bottom: 14px;
+    }
+
+    &--active {
+      a {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -14px;
+          height: 2px;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list--light {
+    .site-list__item {
+      a {
+        color: #fff;
+      }
+
+      &--active {
+        a {
+          &::after {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
 }

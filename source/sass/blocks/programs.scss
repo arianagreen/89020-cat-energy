@@ -9,6 +9,9 @@
 
 .programs__item {
   margin-bottom: 20px;
+}
+
+.programs__content {
   padding: 25px 20px 20px;
   background-color: $secondary;
 }
@@ -60,4 +63,130 @@
   margin-bottom: 19px;
   padding-bottom: 20px;
   @include border;
+}
+
+@media (min-width: $tablet-width) {
+
+  .programs {
+    margin-bottom: 50px;
+    @include tablet-container;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+  }
+
+  .programs__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .programs__text {
+    margin-bottom: 60px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+
+  .programs__content {
+    position: relative;
+    padding-top: 70px;
+    padding-right: 280px;
+    padding-left: 53px;
+    padding-bottom: 60px;
+  }
+
+  .programs__title {
+    position: static;
+    padding-left: 0;
+
+    &::before,
+    &::after {
+      top:50%;
+      transform: translateY(-50%);
+      left: auto;
+      right: 60px;
+      height: 200px;
+      width: 200px;
+    }
+
+    &--slim {
+      &::after {
+        height: 194px;
+        margin-top: -12px;
+      }
+
+    }
+
+    &--pro {
+      &::after {
+        width: 268px;
+        right: 28px;
+      }
+
+      & + .programs__text {
+        padding-right: 31px;
+      }
+    }
+
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    @include desktop-container;
+  }
+  .programs__list {
+    display: flex;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .programs__item {
+    display: flex;
+    align-items: stretch;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .programs__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+  }
+
+  .programs__title {
+    margin-bottom: 65px;
+    padding-left: 164px;
+
+    &::before,
+    &::after {
+      top: -30px;
+      height: 100px;
+      width: 100px;
+    }
+
+    &--slim::after {
+      height: 97px;
+      margin-top: -6px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      left: -18px;
+    }
+  }
+
+  .programs__to-catalog {
+    align-self: flex-start;
+    margin-top: auto;
+  }
 }

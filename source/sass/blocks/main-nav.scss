@@ -1,5 +1,25 @@
 .main-nav {
   position: relative;
+
+  &--closed {
+    .main-nav__toggle {
+      &::before {
+        box-shadow: 0 -8px 0 0 #0f0f0f, 0 8px 0 0 #0f0f0f;
+      }
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle {
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(135deg);
+      }
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -18,14 +38,63 @@
     height: 2px;
     width: 24px;
     background-color: #0f0f0f;
-    transform: rotate(45deg);
     left: 50%;
     top: 50%;
     margin-left: -12px;
     margin-top: -2px;
   }
+}
 
-  &::after {
-    transform: rotate(135deg);
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+
+    &--closed {
+      .main-nav__wrapper {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    &--opened {
+      .main-nav__wrapper {
+        visibility: visible;
+        height: auto;
+      }
+    }
+
+    &--nojs {
+      .main-nav__toggle {
+        display: none;
+      }
+
+      .main-nav__wrapper {
+        visibility: visible;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    max-width: 72%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: height .2s;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 74%;
   }
 }

@@ -8,3 +8,10 @@
   line-height: 16px;
   color: $text-color;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    text-align: right;
+  }
+
+}
