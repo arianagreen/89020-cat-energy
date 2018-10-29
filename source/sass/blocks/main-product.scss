@@ -1,5 +1,6 @@
 .main-product {
-  margin-bottom: 25px;
+  display: flex;
+  // margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
@@ -7,14 +8,23 @@
 }
 
 .main-product__content {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
 }
 
-.main-product__img-wrapper {
+.main-product__img {
+  display: flex;
+  height: 144px;
   width: 50%;
-  margin: -25px 0 0;
+  align-items: flex-end;
+  justify-content: center;
+  // margin: -25px 0 0;
+
+  img {
+    max-height: 100%;
+  }
 }
 
 .main-product__title {
@@ -26,7 +36,12 @@
 }
 
 .main-product__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .main-product__parameters {
@@ -44,30 +59,44 @@
 .main-product__order {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 5px;
+  // margin-top: 5px;
   font-size: 16px;
 }
 
 
 @media (min-width: $tablet-width) {
   .main-product {
-    padding-right: 30px;
-    padding-left: 30px;
+    // padding-top: 85px;
+    padding-right: $tablet-padding;
+    padding-left: $tablet-padding;
+    padding-bottom: 0;
     border-bottom: none;
   }
 
   .main-product__content {
-    background-color: $secondary;
-    padding: 38px 40px;
+    position: relative;
+    padding-top: 235px;
+    // background: linear-gradient(to top, $secondary, $secondary 85%, transparent 85%, transparent);
+    background: linear-gradient(to bottom, transparent, transparent  85px, $secondary 85px, $secondary);
+    // background-color: $secondary;
+    padding-bottom: 40px;
+    overflow: visible;
   }
 
   .main-product__description {
+    padding-left: 38px;
+    padding-right: 38px;
     width: 100%;
+    margin-bottom: 30px;
   }
 
-  .main-product__img-wrapper {
+  .main-product__img {
+    position: absolute;
+    top: 0;
+
+    height: 208px;
     width: 100%;
-    text-align: center;
+    // margin-bottom: 35px;
   }
 
   .main-product__parameters {
@@ -96,7 +125,9 @@
   }
 
   .main-product__order {
-    margin-top: 30px;
+    margin-top: auto;
+    margin-left: 38px;
+    margin-right: 38px;
   }
 }
 

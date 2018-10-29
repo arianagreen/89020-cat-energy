@@ -1,3 +1,6 @@
+'use strict';
+
+
 // Открытие и закрытие меню
 
 var navMain = document.querySelector('.main-nav');

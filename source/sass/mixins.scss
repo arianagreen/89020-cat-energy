@@ -18,6 +18,7 @@
 }
 
 @mixin desktop-container {
-  width: 93.8%;
-  max-width: 1500px;
+  width: 1220px;
+  max-width: none;
+  // max-width: 1500px;
 }

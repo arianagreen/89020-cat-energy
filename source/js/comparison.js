@@ -1,3 +1,5 @@
+'use strict';
+
 function initComparisons() {
   var x, i;
   /*find all elements with an "overlay" class:*/

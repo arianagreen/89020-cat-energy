@@ -1,4 +1,5 @@
 .show-more {
+  margin-top: 25px;
   margin-bottom: 25px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -50,9 +51,12 @@
 
 @media (min-width: $tablet-width) {
   .show-more {
+    padding-top: 85px;
     box-sizing: border-box;
+    margin-top: 0;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 0;
     min-height: 431px;
     border-bottom: none;
 
@@ -62,6 +66,7 @@
   }
 
   .show-more__content {
+    min-height: 430px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
