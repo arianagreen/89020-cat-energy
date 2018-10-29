@@ -1,16 +1,19 @@
 .example {
   background-color: $secondary;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 17px;
+  padding-bottom: 36px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+.example__heading {
+  margin-bottom: 23px;
+}
 
 .example__stats {}
 
 .example__total {
-  margin-top: 38px;
+  margin-top: 34px;
   margin-bottom: 35px;
   font-size: 14px;
   line-height: 20px;
@@ -29,14 +32,21 @@
   margin-bottom: 35px;
 }
 
+.example__comparison {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
     padding: 0;
     background: #fff;
     // background: linear-gradient(to top, $secondary 460px, transparent 460px, transparent 100%);
-    .h2 {
-      @include tablet-container;
-    }
+  }
+
+  .example__heading {
+    @include tablet-container;
+    margin-bottom: 64px;
   }
 
 
@@ -45,16 +55,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 87px;
   }
 
   .example__text {
     flex-grow: 1;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .example__stats {
-    width: 50%;
+    width: 52%;
     margin-bottom: 0;
   }
 
@@ -71,7 +81,7 @@
 
   .example__price {
     display: block;
-    margin-top: 5px;
+    margin-top: 9px;
   }
 
   .example__demo {
@@ -82,10 +92,11 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-bottom: 0;
+  }
 
-    .h2 {
-      @include desktop-container;
-    }
+  .example__heading {
+    @include desktop-container;
+    margin-bottom: 75px;
   }
 
   .example__wrapper {
@@ -95,8 +106,6 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-
-
   }
 
   .example__content {
@@ -104,21 +113,30 @@
   }
 
 
+
+
   .example__stats {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .example__info {
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
     width: calc(450/1220 * 100%);
-    padding-top: 70px;
+    padding-top: 71px;
     margin: 0;
     padding-bottom: 75px;
     // background-color: $secondary;
   }
 
+  .example__text {
+    flex-grow: 0;
+    margin-bottom: 68px;
+  }
+
   .example__total {
+    margin-top: auto;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
@@ -138,8 +156,8 @@
 
   .example__comparison {
     // width: calc(650/1220 * 100%);
-    margin-top: -200px;
-    margin-right: -65px;
+    margin-top: -190px;
+    margin-right: -60px;
   }
 
 

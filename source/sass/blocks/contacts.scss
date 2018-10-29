@@ -1,7 +1,7 @@
 .contacts__info {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px;
+  padding: 27px 20px;
 
   p {
     margin: 0;
@@ -50,7 +50,7 @@
     @include tablet-container;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 60px;
+    padding-top: 67px;
     padding-bottom: 60px;
     margin: auto;
   }
@@ -64,7 +64,7 @@
 
   .contacts__address {
     align-items: flex-end;
-    width: 210px;
+    width: 190px;
     padding-right: 40px;
     text-align: right;
   }
@@ -83,7 +83,7 @@
   }
 
   .contacts__info {
-    width: 43.85%;
+    width: 570px;
     max-width: 710px;
     display: flex;
     align-items: center;
@@ -105,6 +105,9 @@
   }
 
   .contacts__address {
+    width: 40%;
+    align-items: flex-start;
+    text-align: left;
     align-self: stretch;
     padding-right: 0;
   }

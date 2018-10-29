@@ -1,10 +1,12 @@
 .programs {
+  margin-bottom: 36px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .programs__list {
   @include list-reset;
+  margin-bottom: -20px;
 }
 
 .programs__item {
@@ -12,13 +14,14 @@
 }
 
 .programs__content {
-  padding: 25px 20px 20px;
+  padding: 31px 20px 20px;
   background-color: $secondary;
 }
 
 .programs__title {
   position: relative;
   margin-top: 0;
+  margin-bottom: 29px;
   padding-left: 70px;
   font-size: 24px;
   line-height: 37px;
@@ -29,7 +32,7 @@
   &::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 2px;
     top: -6px;
     height: 50px;
     width: 50px;
@@ -52,7 +55,7 @@
 
   &--pro::after {
     width: 67px;
-    left: -9px;
+    left: -7px;
     background-image: url("../img/icon-cat-pro.svg");
   }
 }
@@ -61,14 +64,14 @@
   font-family: $font-text;
   margin-top: 0;
   margin-bottom: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   @include border;
 }
 
 @media (min-width: $tablet-width) {
 
   .programs {
-    margin-bottom: 50px;
+    margin-bottom: 66px;
     @include tablet-container;
     padding-left: 0;
     padding-right: 0;
@@ -79,12 +82,12 @@
   }
 
   .programs__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 36px;
   }
 
   .programs__text {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -94,10 +97,10 @@
 
   .programs__content {
     position: relative;
-    padding-top: 70px;
-    padding-right: 280px;
+    padding-top: 75px;
+    padding-right: 40%;
     padding-left: 53px;
-    padding-bottom: 60px;
+    padding-bottom: 57px;
   }
 
   .programs__title {
@@ -112,12 +115,13 @@
       right: 60px;
       height: 200px;
       width: 200px;
+      margin-top: 5px;
     }
 
     &--slim {
       &::after {
         height: 194px;
-        margin-top: -12px;
+        margin-top: -10px;
       }
 
     }
@@ -140,11 +144,13 @@
 @media (min-width: $desktop-width) {
   .programs {
     @include desktop-container;
+    margin-bottom: 74px;
   }
   .programs__list {
     display: flex;
     margin-left: -40px;
     margin-right: -40px;
+    margin-bottom: -30px;
   }
   .programs__item {
     display: flex;
@@ -164,7 +170,7 @@
   }
 
   .programs__title {
-    margin-bottom: 65px;
+    margin-bottom: 75px;
     padding-left: 164px;
 
     &::before,
@@ -183,6 +189,10 @@
       width: 134px;
       left: -18px;
     }
+  }
+
+  .programs__text {
+    margin-bottom: 32px;
   }
 
   .programs__to-catalog {

@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .features__wrapper {
@@ -54,8 +54,8 @@
 @media (min-width: $tablet-width) {
   .features {
     @include border;
-    margin-bottom: 45px;
-    padding-bottom: 60px;
+    margin-bottom: 43px;
+    padding-bottom: 59px;
   }
 
   .features__wrapper {
@@ -97,8 +97,8 @@
       position: absolute;
       height: 100%;
       width: 50%;
-      left: 126px;
-      top: 0;
+      right: 45px;
+      top: -11px;
       font-family: $font;
       font-size: 281px;
       line-height: 228px;
@@ -127,6 +127,12 @@
 
   .features {
     border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 82px;
+  }
+
+  .features__heading {
+    margin-bottom: 72px;
   }
 
   .features__wrapper {
@@ -136,6 +142,7 @@
   .features__list {
     margin-left: -40px;
     margin-right: -40px;
+    margin-bottom: -30px;
   }
 
   .features__item {
@@ -144,9 +151,15 @@
     // margin-right: 80px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 112px;
+    margin-bottom: 30px;
 
     &::before {
       left: 40px;
+    }
+
+    &::after {
+      right: 10px;
     }
   }
 }
