@@ -33,7 +33,7 @@ a {
 }
 
 .h1 {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 60px;
@@ -47,15 +47,15 @@ a {
 
 .h2 {
   // position: relative;
-  margin-top: 0;
-  margin-bottom: 27px;
+  margin-top: 28px;
+  margin-bottom: 34px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 
   &--decor {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     font-size: 24px;
     line-height: 24px;
@@ -69,7 +69,7 @@ a {
 
       min-width: 20px;
       height: 3px;
-      margin-top: 5px;
+      margin-top: 14px;
 
       background: $primary;
     }
@@ -129,7 +129,7 @@ a {
   .h1 {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
 
   .page-heading {
@@ -137,8 +137,12 @@ a {
   }
 
   .h2 {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     font-size: 60px;
+
+    br {
+      display: none;
+    }
 
     &--decor {
       display: block;
@@ -154,8 +158,7 @@ a {
         position: absolute;
         height: 3px;
         background: $primary;
-        top: 50%;
-        margin-top: -2px;
+        top: 9px;
         left: 0;
         right: 0;
       }
@@ -188,6 +191,11 @@ a {
 
   .page-heading {
     @include desktop-container;
+    margin-top: 29px;
+  }
+
+  .h2--decor {
+    margin-top: 0;
   }
 
   .h2__content {

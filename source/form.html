@@ -11,7 +11,7 @@
     </script>
     <script src="js/picturefill.min.js" async></script>
   </head>
-  <body>
+  <body class="form-page">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
@@ -42,9 +42,9 @@
       </div><!-- container -->
     </header>
 
-    <main class="page-main form-page">
+    <main class="page-main">
       <h1 class="h1 page-heading">Подбор программы</h1>
-      <p class="form-page__help">Заполните анкету и мы подберем <br> программу для вашего кота</p>
+      <p class="form-page__help">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
 
       <section class="program-selection">
 
@@ -69,21 +69,21 @@
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--bb">
                 <ul class="form__filter-wrapper form__filter-wrapper--frame">
-                  <li class="form__group">
+                  <li class="form__group form__group--indicator">
                     <label class="form__radio">
                       <input type="radio" class="visually-hidden" name="goal" value="weight-loss" checked>
                       <span class="form__indicator form__indicator--radio"></span>
                       Похудение
                     </label>
                   </li>
-                  <li class="form__group">
+                  <li class="form__group form__group--indicator">
                     <label class="form__radio">
                       <input type="radio" class="visually-hidden" name="goal" value="weight-gain">
                       <span class="form__indicator form__indicator--radio"></span>
                       Набор массы
                     </label>
                   </li>
-                  <li class="form__group">
+                  <li class="form__group form__group--indicator">
                     <label class="form__radio">
                       <input type="radio" class="visually-hidden" name="goal" value="need-advice">
                       <span class="form__indicator form__indicator--radio"></span>
@@ -97,7 +97,7 @@
 
           <h2 class="h2 h2--decor">
             <span class="h2__content">
-              <span class="h2__text">Контактные данные (владельца кота)</span>
+              <span class="h2__text">Контактные данные<br> (владельца кота)</span>
             </span>
           </h2>
           <fieldset class="form__fieldset">
@@ -119,39 +119,39 @@
           </h2>
           <fieldset class="form__fieldset">
             <p class="form__filter-wrapper">
-              <textarea class="form__input" name="cat-habits" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__input form__input--textarea" name="cat-habits" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
 
-          <h2 class="h2 h2--decor">
+          <h2 class="h2 h2--decor form__heading custom-margin">
             <span class="h2__content">
               <span class="h2__text">Дополнительно</span>
             </span>
           </h2>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset custom-margin">
             <ul class="form__filter-wrapper form__filter-wrapper--columns">
-              <li class="form__group">
+              <li class="form__group form__group--indicator">
                 <label class="form__checkbox">
                   <input type="checkbox" class="visually-hidden" name="weight-loss" checked>
                   <span class="form__indicator form__indicator--checkbox"></span>
                   Сахарозаменитель
                 </label>
               </li>
-              <li class="form__group">
+              <li class="form__group form__group--indicator">
                 <label class="form__checkbox">
                   <input type="checkbox" class="visually-hidden" name="weight-gain">
                   <span class="form__indicator form__indicator--checkbox"></span>
                   Питьевая вода
                 </label>
               </li>
-              <li class="form__group">
+              <li class="form__group form__group--indicator">
                 <label class="form__checkbox disabled">
                   <input type="checkbox" class="visually-hidden" name="need-advice" disabled>
                   <span class="form__indicator form__indicator--checkbox"></span>
                   Молоко
                 </label>
               </li>
-              <li class="form__group">
+              <li class="form__group form__group--indicator">
                 <label class="form__checkbox">
                   <input type="checkbox" class="visually-hidden" name="need-advice">
                   <span class="form__indicator form__indicator--checkbox"></span>
@@ -176,7 +176,7 @@
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts__info">
-          <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__invitation">Приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="contacts__address">
             <span class="contacts__street">
               ул. Большая Конюшенная, д. 19/8
@@ -225,5 +225,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
