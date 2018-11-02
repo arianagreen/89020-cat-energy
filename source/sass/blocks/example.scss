@@ -7,6 +7,7 @@
 }
 
 .example__heading {
+  margin-top: 0;
   margin-bottom: 23px;
 }
 
@@ -55,7 +56,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 87px;
+    margin-bottom: 86px;
   }
 
   .example__text {
@@ -64,7 +65,7 @@
   }
 
   .example__stats {
-    width: 52%;
+    width: 51.5%;
     margin-bottom: 0;
   }
 

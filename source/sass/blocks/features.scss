@@ -9,6 +9,7 @@
 
 .features__heading {
   margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .features__list {
@@ -55,7 +56,11 @@
   .features {
     @include border;
     margin-bottom: 43px;
-    padding-bottom: 59px;
+    padding-bottom: 57px;
+  }
+
+  .features__heading {
+    margin-bottom: 71px;
   }
 
   .features__wrapper {
@@ -81,10 +86,9 @@
     // margin-right: 60px;
     // padding-left: 0;
     padding-left: 30px;
-    padding-right: 30px;
     margin-bottom: 90px;
-    padding-top: 115px;
-    padding-right: 14%;
+    padding-top: 112px;
+    padding-right: 13%;
 
     &::before {
       left: 30px;

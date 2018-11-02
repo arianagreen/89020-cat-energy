@@ -108,14 +108,31 @@ a {
   overflow: hidden;
 }
 
-.container {
-  display: block;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+// .container {
+//   display: block;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.logo[href] {
+  transition: opacity 0.2s;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
+sup {
+  top: 0;
+  font-size: 16px;
+}
 
 @media (min-width: $tablet-width) {
   body {
