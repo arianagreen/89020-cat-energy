@@ -124,7 +124,7 @@
   .example__info {
     flex-direction: column;
     justify-content: flex-start;
-    width: calc(450/1220 * 100%);
+    width: 36.4%;
     padding-top: 71px;
     margin: 0;
     padding-bottom: 75px;
@@ -153,13 +153,8 @@
     margin-left: 65px;
   }
 
-
-
   .example__comparison {
-    // width: calc(650/1220 * 100%);
     margin-top: -190px;
     margin-right: -60px;
   }
-
-
 }
