@@ -163,15 +163,15 @@
   .programs__content {
     display: flex;
     flex-direction: column;
-    padding-top: 75px;
-    padding-left: 50px;
+    padding-top: 76px;
+    padding-left: 52px;
     padding-right: 50px;
     padding-bottom: 60px;
   }
 
   .programs__title {
     margin-bottom: 75px;
-    padding-left: 164px;
+    padding-left: 162px;
 
     &::before,
     &::after {
@@ -180,8 +180,13 @@
       width: 100px;
     }
 
+    &::before {
+      left: 0;
+    }
+
     &--slim::after {
       height: 97px;
+      left: -1px;
       margin-top: -6px;
     }
 
@@ -192,7 +197,7 @@
   }
 
   .programs__text {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 
   .programs__to-catalog {

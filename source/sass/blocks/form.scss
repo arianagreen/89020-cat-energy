@@ -481,6 +481,14 @@ input[type="checkbox"]:checked + .form__indicator {
     padding-right: $desktop-padding;
   }
 
+  .form__group {
+    &--text {
+      .form__label {
+        margin-right: 20px;
+      }
+    }
+  }
+
   .form__input {
     padding-left: 18px;
     padding-right: 18px;

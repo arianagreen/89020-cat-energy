@@ -163,7 +163,14 @@
     }
 
     &::after {
+      top: -14px;
       right: 10px;
+    }
+
+    &:first-child {
+      &::after {
+        right: 4px;
+      }
     }
   }
 }

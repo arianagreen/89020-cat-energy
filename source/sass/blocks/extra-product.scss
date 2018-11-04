@@ -97,7 +97,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    min-height: 72px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
@@ -118,6 +118,7 @@
     width: calc(325/895 * 100%);
     box-sizing: border-box;
     padding-right: 40px;
+    padding-top: 8px;
   }
 
   .extra-product__order {

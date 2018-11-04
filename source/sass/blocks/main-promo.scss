@@ -120,9 +120,9 @@
     box-sizing: border-box;
     display: flex;
     // align-items: center;
-    height: 48.3vw;
+    min-height: 696px;
     margin-bottom: 80px;
-    padding-top: 10%;
+    padding-top: 144px;
     // background: linear-gradient(to right, #ffffff 50%, $primary 50%, $primary 100%);
     // background-image: url("../img/index-background-desktop@1x.jpg");
     // background-repeat: no-repeat;
@@ -136,6 +136,7 @@
       height: 100%;
       background-size: cover;
       background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position-x: 0;
     }
   }
 
@@ -156,14 +157,13 @@
   }
 
   .main-promo__img {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -2px;
     left: -13%;
     transform: none;
     width: 552px;
     height: 499px;
 
-    position: relative;
     bottom: auto;
     // right: 12.5%;
   }

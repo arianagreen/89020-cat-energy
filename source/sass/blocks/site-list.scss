@@ -67,13 +67,9 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .site-list--light {
     .site-list__item {
-
-      &:not(:last-child) {
-        margin-right: 34px;
-      }
-
       a {
         color: #fff;
       }
@@ -88,7 +84,13 @@
     }
   }
 
+
+
   .site-list__item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
     a {
       font-size: 20px;
     }
