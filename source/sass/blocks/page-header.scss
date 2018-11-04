@@ -9,7 +9,7 @@
   display: block;
   @include border;
 
-  padding: 11px 66px 16px 20px;
+  padding: 13px 66px 13px 20px;
   transition: opacity .2s;
 
   &[href] {
@@ -25,14 +25,16 @@
 }
 
 .page-header__logo-image {
-  width: 192px;
-  height: 38px;
+  img {
+    width: 192px;
+    height: 38px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin-bottom: 60px;
-    padding-top: 24px;
+    margin-bottom: 58px;
+    padding-top: 25px;
   }
 
   .page-header__wrapper {
@@ -50,8 +52,10 @@
   }
 
   .page-header__logo-image {
-    width: 173px;
-    height: 58px;
+    img {
+      width: 173px;
+      height: 58px;
+    }
   }
 }
 
@@ -60,7 +64,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 100%;
-    padding-top: 54px;
+    padding-top: 55px;
 
     &--index {
       z-index: 2;
@@ -78,9 +82,9 @@
   }
 
   .page-header__logo-image {
-    width: 202px;
-    height: 59px;
-    position: relative;
-    top: -3px;
+    img {
+      width: 203px;
+      height: 59px;
+    }
   }
 }

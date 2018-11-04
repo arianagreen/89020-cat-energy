@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     top: 0;
-    height: 63%;
+    height: 64%;
     background-color: #63a73a;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -19,15 +19,21 @@
   }
 }
 
+.main-promo__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .main-promo__content {
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 26px;
   color: #fff;
   text-align: center;
 }
 
 .main-promo__heading {
   margin-top: 0;
+  margin-bottom: 26px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
@@ -41,7 +47,8 @@
 }
 
 .main-promo__button {
-  margin-top: 300px;
+  width: 100%;
+  margin-top: 301px;
 }
 
 .main-promo__img {
@@ -81,7 +88,7 @@
   }
 
   .main-promo__heading {
-    margin-bottom: 35px;
+    margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -92,7 +99,8 @@
   }
 
   .main-promo__button {
-    margin-top: 45px;
+    width: auto;
+    margin-top: 47px;
     font-size: 20px;
   }
 
@@ -109,10 +117,12 @@
 
 @media (min-width: $desktop-width) {
   .main-promo {
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
-    height: 48vw;
+    // align-items: center;
+    min-height: 696px;
     margin-bottom: 80px;
+    padding-top: 144px;
     // background: linear-gradient(to right, #ffffff 50%, $primary 50%, $primary 100%);
     // background-image: url("../img/index-background-desktop@1x.jpg");
     // background-repeat: no-repeat;
@@ -126,35 +136,39 @@
       height: 100%;
       background-size: cover;
       background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position-x: 0;
     }
   }
 
   .main-promo__wrapper {
     @include desktop-container;
-
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding-top: 60px;
+    // align-items: center;
   }
 
   .main-promo__content {
     width: 50%;
     padding-left: 80px;
-    padding-top: 0;
+    padding-top: 78px;
     padding-right: 0;
     padding-bottom: 0;
   }
 
   .main-promo__img {
+    position: relative;
+    top: -2px;
+    left: -13%;
     transform: none;
     width: 552px;
     height: 499px;
 
-    position: relative;
-    left: auto;
-    top: 30px;
     bottom: auto;
-    right: 12.5%;
+    // right: 12.5%;
+  }
+
+  .main-promo__button {
+    margin-top: 52px;
   }
 }

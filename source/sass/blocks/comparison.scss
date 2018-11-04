@@ -17,29 +17,35 @@
 .comparison__switcher {
   display: flex;
   max-width: 280px;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .comparison__control {
+  width: 50px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  &--before {
+    text-align: right;
+  }
 }
 
-.switcher__wrapper {
-
+.comparison__handle-wrapper {
+  margin-left: 17px;
+  margin-right: 17px;
 }
 
 .comparison__handle {
   position: relative;
   width: 84px;
-  height: 14px;
+  height: 12px;
   background: #fff;
   border: 1px solid $gray-darker;
   border-radius: 6px;
@@ -69,7 +75,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 20%;
+      top: 27%;
       bottom: 0;
     }
 
@@ -89,7 +95,7 @@
   .comparison__img-wrapper {
     z-index: 1;
     position: relative;
-    height: 640px;
+    height: 630px;
     width: 690px;
     margin-left: auto;
     margin-right: auto;
@@ -106,12 +112,12 @@
     overflow: hidden;
 
     &--before {
-      background: linear-gradient(to top, #f2f2f2, #f2f2f2 80%, #ffffff 80%, #ffffff);
+      background: linear-gradient(to top, #f2f2f2, #f2f2f2 73%, #ffffff 73%, #ffffff);
     }
 
     &--after {
       display: block;
-      background: linear-gradient(to top, #eaeaea, #eaeaea 80%, #ffffff 80%, #ffffff);
+      background: linear-gradient(to top, #eaeaea, #eaeaea 73%, #ffffff 73%, #ffffff);
     }
 
     &--overlay {
@@ -127,7 +133,7 @@
       max-width: initial;
       height: auto;
       vertical-align: middle;
-      margin-left: -20px;
+      margin-left: 5px;
       // transform: translateX(-50%);
     }
   }
@@ -141,7 +147,7 @@
     z-index: 2;
     position: absolute;
     width: 100%;
-    bottom: 65px;
+    bottom: 69px;
     max-width: 570px;
     margin-top: 0;
     left: 50%;
@@ -222,16 +228,25 @@
   }
 
   .comparison__img {
+    img {
+      margin-left: -20px;
+    }
+
     &--before {
-      background: linear-gradient(to top, #f2f2f2, #f2f2f2 452px, #ffffff 452px, #ffffff);
+      background: linear-gradient(to top, #f2f2f2, #f2f2f2 462px, #ffffff 462px, #ffffff);
     }
 
     &--after {
-      background: linear-gradient(to top, #eaeaea, #eaeaea 452px, #ffffff 452px, #ffffff);
+      background: linear-gradient(to top, #eaeaea, #eaeaea 462px, #ffffff 462px, #ffffff);
     }
   }
 
   .comparison__switcher {
     bottom: 70px;
+  }
+
+  .comparison__control--before {
+    position: relative;
+    right: 5px;
   }
 }

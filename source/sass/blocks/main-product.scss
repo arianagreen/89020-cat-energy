@@ -3,8 +3,12 @@
   // margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   @include border;
+
+  &:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .main-product__content {
@@ -40,7 +44,7 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
 }
 
@@ -53,14 +57,17 @@
 
 .main-product__value {
   text-align: right;
-  text-transform: uppercase;
+
+  &--price {
+    text-transform: uppercase;
+  }
 }
 
 .main-product__order {
   box-sizing: border-box;
   width: 100%;
   // margin-top: 5px;
-  font-size: 16px;
+  // font-size: 16px;
 }
 
 
@@ -71,23 +78,29 @@
     padding-left: $tablet-padding;
     padding-bottom: 0;
     border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+    }
   }
 
   .main-product__content {
     position: relative;
     padding-top: 235px;
     // background: linear-gradient(to top, $secondary, $secondary 85%, transparent 85%, transparent);
-    background: linear-gradient(to bottom, transparent, transparent  85px, $secondary 85px, $secondary);
+    background: linear-gradient(to bottom, transparent, transparent  83px, $secondary 83px, $secondary);
     // background-color: $secondary;
     padding-bottom: 40px;
     overflow: visible;
   }
 
   .main-product__description {
+    width: 100%;
+    margin-bottom: 32px;
+    padding-top: 10px;
     padding-left: 38px;
     padding-right: 38px;
-    width: 100%;
-    margin-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .main-product__img {
@@ -106,7 +119,7 @@
 
     td {
       padding-top: 7px;
-      padding-bottom: 5px;
+      padding-bottom: 8px;
       border-bottom: 1px solid $gray-darker;
     }
   }
@@ -128,6 +141,8 @@
     margin-top: auto;
     margin-left: 38px;
     margin-right: 38px;
+    padding-top: 11px;
+    padding-bottom: 9px;
   }
 }
 
@@ -135,5 +150,15 @@
   .main-product {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .main-product__description {
+    margin-bottom: 34px;
+  }
+
+  .main-product__parameters {
+    td {
+      padding-bottom: 7px;
+    }
   }
 }

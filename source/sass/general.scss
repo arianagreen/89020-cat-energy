@@ -33,29 +33,26 @@ a {
 }
 
 .h1 {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 }
 
-.page-heading {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .h2 {
   // position: relative;
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin-top: 28px;
+  margin-bottom: 34px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
 
   &--decor {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     font-size: 24px;
     line-height: 24px;
@@ -69,7 +66,7 @@ a {
 
       min-width: 20px;
       height: 3px;
-      margin-top: 5px;
+      margin-top: 14px;
 
       background: $primary;
     }
@@ -111,14 +108,31 @@ a {
   overflow: hidden;
 }
 
-.container {
-  display: block;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+// .container {
+//   display: block;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.logo[href] {
+  transition: opacity 0.2s;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
+sup {
+  top: 0;
+  font-size: 16px;
+}
 
 @media (min-width: $tablet-width) {
   body {
@@ -127,18 +141,19 @@ a {
   }
 
   .h1 {
+    @include tablet-container;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 45px;
-  }
-
-  .page-heading {
-    @include tablet-container;
+    margin-bottom: 55px;
   }
 
   .h2 {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     font-size: 60px;
+
+    br {
+      display: none;
+    }
 
     &--decor {
       display: block;
@@ -154,8 +169,7 @@ a {
         position: absolute;
         height: 3px;
         background: $primary;
-        top: 50%;
-        margin-top: -2px;
+        top: 9px;
         left: 0;
         right: 0;
       }
@@ -170,8 +184,8 @@ a {
   }
 
   .h2__text {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   .container {
@@ -186,8 +200,13 @@ a {
     width: $desktop-content-width;
   }
 
-  .page-heading {
+  .h1 {
     @include desktop-container;
+    margin-top: 29px;
+  }
+
+  .h2--decor {
+    margin-top: 0;
   }
 
   .h2__content {

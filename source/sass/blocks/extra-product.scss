@@ -1,6 +1,6 @@
 .extra-product {
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 18px;
   @include border;
 
   &:first-child {
@@ -48,8 +48,8 @@
   .extra-product {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 38px;
+    padding-right: 38px;
     padding-top: 25px;
     padding-bottom: 27px;
     border-left: 1px solid $gray-darker;
@@ -76,6 +76,7 @@
     width: 50%;
     font-size: 16px;
     line-height: 20px;
+    padding-top: 5px;
 
     td {
       padding: 0;
@@ -84,8 +85,10 @@
 
   .extra-product__order {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 21px;
     font-size: 16px;
+    padding-top: 11px;
+    padding-bottom: 9px;
   }
 }
 
@@ -94,7 +97,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    min-height: 72px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
@@ -115,6 +118,7 @@
     width: calc(325/895 * 100%);
     box-sizing: border-box;
     padding-right: 40px;
+    padding-top: 8px;
   }
 
   .extra-product__order {

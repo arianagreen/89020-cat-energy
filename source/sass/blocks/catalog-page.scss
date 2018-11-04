@@ -1,10 +1,43 @@
-.catalog-page__heading {
-  padding-bottom: 25px;
-  @include border;
+.catalog-page {
+  .h1 {
+    margin-bottom: 28px;
+  }
+
+  .h2 {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-page__heading {
-    border-bottom: none;
+  .catalog-page {
+    .h1 {
+      margin-top: 0;
+      margin-bottom: 82px;
+    }
+
+    .h2 {
+      margin-bottom: 80px;
+    }
+
+    .page-footer {
+      margin-top: 75px;
+    }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page {
+    .page-header {
+      margin-bottom: 72px;
+    }
+
+    .h1 {
+      margin-bottom: 84px;
+    }
+
+    .page-footer {
+      margin-top: 88px;
+    }
+  }
+
 }

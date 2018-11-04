@@ -1,7 +1,7 @@
 .contacts__info {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px;
+  padding: 27px 20px;
 
   p {
     margin: 0;
@@ -12,7 +12,7 @@
   box-sizing: border-box;
   display: block;
   width: 50%;
-  padding-right: 20px;
+  padding-right: 15px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -41,32 +41,33 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts {
-
-    background: #fff;
-  }
 
   .contacts__info {
+    box-sizing: border-box;
+    align-items: center;
     @include tablet-container;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    min-height: 201px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 46px;
+    padding-bottom: 40px;
     margin: auto;
   }
 
   .contacts__invitation {
     font-size: 20px;
     line-height: 25px;
-    padding-left: 40px;
     width: 220px;
   }
 
   .contacts__address {
     align-items: flex-end;
-    width: 210px;
-    padding-right: 40px;
+    width: 190px;
+    // padding-right: 40px;
     text-align: right;
+  }
+  .contacts__city {
+    margin-top: 20px;
   }
 
   .contacts__map {
@@ -80,10 +81,11 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+    background: #fff;
   }
 
   .contacts__info {
-    width: 43.85%;
+    width: 570px;
     max-width: 710px;
     display: flex;
     align-items: center;
@@ -91,7 +93,6 @@
     position: absolute;
     // width: 570px;
     // width: calc(#{$desktop-content-width} / 2 - #{$desktop-padding});
-    min-height: 200px;
     top: 50%;
     right: 50%;
     margin-right: 40px;
@@ -105,6 +106,9 @@
   }
 
   .contacts__address {
+    width: 40%;
+    align-items: flex-start;
+    text-align: left;
     align-self: stretch;
     padding-right: 0;
   }

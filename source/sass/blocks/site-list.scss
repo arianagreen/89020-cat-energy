@@ -37,10 +37,13 @@
   .site-list__item {
 
     &:not(:last-child) {
-      margin-right: 35px;
+      margin-right: 40px;
     }
 
     a {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: normal;
       padding: 0;
       position: relative;
       border-bottom: none;
@@ -54,7 +57,7 @@
           position: absolute;
           left: 0;
           right: 0;
-          bottom: -14px;
+          bottom: -12px;
           height: 2px;
           background-color: $primary;
         }
@@ -64,6 +67,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .site-list--light {
     .site-list__item {
       a {
@@ -77,6 +81,18 @@
           }
         }
       }
+    }
+  }
+
+
+
+  .site-list__item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    a {
+      font-size: 20px;
     }
   }
 
