@@ -13,7 +13,7 @@
 }
 
 .copyright__link {
-  max-width: 320px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -44,6 +44,12 @@
   position: relative;
   right: -6px;
   fill: #666666;
+}
+
+@media (min-width: 400px) {
+  .copyright__link {
+    max-width: 160px;
+  }
 }
 
 @media (min-width: $tablet-width) {
