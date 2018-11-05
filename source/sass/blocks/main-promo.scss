@@ -1,8 +1,6 @@
 .main-promo {
   position: relative;
   margin-bottom: 22px;
-  // background: linear-gradient($primary 305px, #ffffff 60%);
-
 
   &::before {
     z-index: -1;
@@ -65,12 +63,10 @@
   transform: translateX(-50%);
 }
 
-
 @media (min-width: $tablet-width) {
   .main-promo {
     margin-bottom: 0;
     background: #fff;
-    // padding-left: 90px;
 
     &::before {
       display: none;
@@ -118,8 +114,6 @@
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
   .main-promo {
     box-sizing: border-box;
@@ -128,11 +122,6 @@
     min-height: 696px;
     margin-bottom: 80px;
     padding-top: 144px;
-    // background: linear-gradient(to right, #ffffff 50%, $primary 50%, $primary 100%);
-    // background-image: url("../img/index-background-desktop@1x.jpg");
-    // background-repeat: no-repeat;
-    // background-position: right top;
-    // background-size: 50%;
 
     &::before {
       z-index: auto;
@@ -154,7 +143,6 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    // align-items: center;
   }
 
   .main-promo__content {
@@ -174,7 +162,6 @@
     height: 499px;
 
     bottom: auto;
-    // right: 12.5%;
   }
 
   .main-promo__button {

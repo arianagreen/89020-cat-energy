@@ -12,6 +12,13 @@
   color: $text-color;
 }
 
+.copyright__icon {
+  transition: fill 0.2s;
+  position: relative;
+  right: -6px;
+  fill: #666666;
+}
+
 .copyright__link {
   width: 280px;
   margin-left: auto;
@@ -26,24 +33,11 @@
     .copyright__icon {
       fill: $primary;
     }
-
   }
 
-  // &:active {
-  //   .copyright__icon {
-  //
-  //   }
-  //   fill: $primary;
-  //   opacity: 0.3;
-  // }
-
-}
-
-.copyright__icon {
-  transition: fill 0.2s;
-  position: relative;
-  right: -6px;
-  fill: #666666;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 400px) {
