@@ -10,8 +10,6 @@
   padding-right: 20px;
 }
 
-
-
 .page-footer__item {
   width: 100%;
   @include border;
@@ -28,19 +26,31 @@
   text-align: center;
 }
 
-.index-page {
-  .page-footer {
+.page-footer {
+  &--index {
     margin-top: 0;
+
+    .page-footer__contacts {
+      background-color: #fff;
+    }
   }
 
-  .page-footer__contacts {
-    background-color: #fff;
+  &--form {
+    margin-top: 17px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: 70px;
+
+    &--index {
+      margin-top: 0;
+    }
+
+    &--catalog {
+      margin-top: 75px;
+    }
   }
 
   .page-footer__footer {
@@ -75,6 +85,14 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     margin-top: 80px;
+
+    &--index {
+      margin-top: 0;
+    }
+
+    &--catalog {
+      margin-top: 88px;
+    }
   }
 
   .page-footer__footer {

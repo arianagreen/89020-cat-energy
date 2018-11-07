@@ -40,10 +40,13 @@ a {
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
+
+  &--catalog {
+    margin-bottom: 28px;
+  }
 }
 
 .h2 {
-  // position: relative;
   margin-top: 28px;
   margin-bottom: 34px;
   font-size: 36px;
@@ -70,18 +73,11 @@ a {
 
       background: $primary;
     }
-
-    // &::before {
-    //   visibility: hidden;
-    //   margin-right: 20px;
-    // }
-
-    // &::after {
-    //   margin-left: 20px;
-    // }
   }
 
-
+  &--catalog {
+    margin-top: 0;
+  }
 }
 
 .h2__text {
@@ -107,14 +103,6 @@ a {
 .page-main {
   overflow: hidden;
 }
-
-// .container {
-//   display: block;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
 
 .logo[href] {
   transition: opacity 0.2s;
@@ -145,6 +133,11 @@ sup {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 55px;
+
+    &--catalog {
+      margin-top: 0;
+      margin-bottom: 82px;
+    }
   }
 
   .h2 {
@@ -174,6 +167,11 @@ sup {
         right: 0;
       }
     }
+
+    &--catalog {
+      margin-bottom: 80px;
+    }
+
   }
 
   .h2__content {
@@ -187,22 +185,16 @@ sup {
     padding-left: 37px;
     padding-right: 37px;
   }
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-    width: $tablet-content-width;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    width: $desktop-content-width;
-  }
-
   .h1 {
     @include desktop-container;
     margin-top: 29px;
+
+    &--catalog {
+      margin-bottom: 84px;
+    }
   }
 
   .h2--decor {
