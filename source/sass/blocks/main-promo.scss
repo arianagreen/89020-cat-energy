@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     top: 0;
-    height: 64%;
+    height: 305px;
     background-color: #65a93c;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
 .main-promo__content {
   box-sizing: border-box;
-  padding-top: 26px;
+  padding-top: 27px;
   color: #fff;
   text-align: center;
 }
@@ -52,6 +52,7 @@
 .main-promo__button {
   width: 100%;
   margin-top: 301px;
+  font-size: 14px;
 }
 
 .main-promo__img {
@@ -59,7 +60,7 @@
   height: 271px;
   position: absolute;
   left: 50%;
-  bottom: 45px;
+  bottom: 43px;
   transform: translateX(-50%);
 }
 

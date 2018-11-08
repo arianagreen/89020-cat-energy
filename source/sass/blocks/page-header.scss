@@ -35,6 +35,10 @@
   .page-header {
     margin-bottom: 58px;
     padding-top: 25px;
+
+    &--form {
+      margin-bottom: 43px;
+    }
   }
 
   .page-header__wrapper {
@@ -59,8 +63,6 @@
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
   .page-header {
     width: 100%;
@@ -70,6 +72,10 @@
       z-index: 2;
       position: absolute;
       top: 0;
+    }
+
+    &--catalog {
+      margin-bottom: 72px;
     }
   }
 
