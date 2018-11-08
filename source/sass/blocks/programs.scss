@@ -61,17 +61,17 @@
 }
 
 .programs__text {
+  @include border;
   font-family: $font-text;
   margin-top: 0;
   margin-bottom: 19px;
   padding-bottom: 22px;
-  @include border;
 }
 
 @media (min-width: $tablet-width) {
   .programs {
-    margin-bottom: 66px;
     @include tablet-container;
+    margin-bottom: 66px;
     padding-left: 0;
     padding-right: 0;
   }

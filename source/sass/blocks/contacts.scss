@@ -62,9 +62,9 @@
 
 @media (min-width: $tablet-width) {
   .contacts__info {
+    @include tablet-container;
     box-sizing: border-box;
     align-items: center;
-    @include tablet-container;
     min-height: 201px;
     padding: 46px 40px 40px;
     margin: auto;
@@ -136,7 +136,7 @@
     margin-right: 40px;
     transform: translateY(-50%);
     padding: 60px 75px;
-    background: #fff;
+    background: #ffffff;
   }
 
   .contacts__invitation {

@@ -6,8 +6,8 @@
 }
 
 .page-header__logo {
-  display: block;
   @include border;
+  display: block;
   padding: 13px 66px 13px 20px;
   transition: opacity 0.2s;
 

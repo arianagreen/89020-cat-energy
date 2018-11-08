@@ -20,8 +20,8 @@
 }
 
 .page-footer__item {
-  width: 100%;
   @include border;
+  width: 100%;
 
   &:last-child {
     border-bottom: none;
