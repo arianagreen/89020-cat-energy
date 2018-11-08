@@ -6,6 +6,7 @@
   padding-right: 20px;
   text-transform: uppercase;
 }
+
 @media (min-width: $tablet-width) {
   .form-page__help {
     @include tablet-container;
@@ -15,13 +16,11 @@
     line-height: 30px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .form-page__help {
     @include desktop-container;
     margin-bottom: 66px;
-  }
-
-  .form-page__help {
     padding-left: 0;
   }
 }

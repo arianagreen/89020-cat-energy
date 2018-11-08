@@ -3,9 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
 @mixin border {
   border-bottom: 1px solid #d9d9d9;
 }
+
 @mixin tablet-container {
   width: 92.2%;
   max-width: 1200px;
@@ -14,6 +16,7 @@
   padding-left: 0;
   padding-right: 0;
 }
+
 @mixin desktop-container {
   width: 1220px;
   max-width: none;

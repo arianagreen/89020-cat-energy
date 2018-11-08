@@ -38,7 +38,7 @@
   font-family: $font-text;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
   background-color: #62a639;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -65,6 +65,7 @@
   width: 180px;
   text-align: center;
 }
+
 @media (min-width: 500px) {
   .catalog__promo {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -74,6 +75,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .catalog {
     @include tablet-container;
@@ -107,6 +109,7 @@
     box-sizing: border-box;
   }
 }
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
   .catalog__promo {
     height: 200px;
@@ -125,6 +128,7 @@
     text-align: left;
   }
 }
+
 @media (min-width: 960px) {
   .catalog {
     &--main {
@@ -134,6 +138,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .catalog {
     @include desktop-container;

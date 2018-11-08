@@ -67,6 +67,7 @@
 @media (min-width: $tablet-width) {
   .comparison {
     position: relative;
+    justify-content: center;
 
     &::after,
     &::before {
@@ -134,10 +135,6 @@
     }
   }
 
-  .comparison {
-    justify-content: center;
-  }
-
   .comparison__switcher {
     z-index: 2;
     position: absolute;
@@ -194,13 +191,13 @@
     font-size: 20px;
     line-height: 26px;
     // text-decoration: underline dotted;
-    border-bottom: 1px dotted rgba($text-color, .23);
+    border-bottom: 1px dotted rgba($text-color, 0.23);
     transition: border 0.2s;
 
     &:focus,
     &:hover {
       cursor: pointer;
-      border-bottom: 1px solid rgba($text-color, .4);
+      border-bottom: 1px solid rgba($text-color, 0.4);
     }
 
     &:active {

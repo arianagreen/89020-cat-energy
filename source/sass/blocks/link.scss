@@ -24,7 +24,7 @@
 
     &::after,
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
       width: 33px;
@@ -53,6 +53,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .link {
     &--to-catalog {

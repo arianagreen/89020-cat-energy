@@ -8,8 +8,6 @@
   margin-bottom: 23px;
 }
 
-.example__stats {}
-
 .example__total {
   margin-top: 34px;
   margin-bottom: 35px;
@@ -34,10 +32,11 @@
   margin-left: -20px;
   margin-right: -20px;
 }
+
 @media (min-width: $tablet-width) {
   .example {
     padding: 0;
-    background: #fff;
+    background: #ffffff;
     // background: linear-gradient(to top, $secondary 460px, transparent 460px, transparent 100%);
   }
 
@@ -84,6 +83,7 @@
     margin-top: 85px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .example {
     padding-bottom: 0;
@@ -119,7 +119,6 @@
     padding-top: 71px;
     margin: 0;
     padding-bottom: 75px;
-    // background-color: $secondary;
   }
 
   .example__text {
@@ -135,7 +134,7 @@
   }
 
   .example__demo {
-    width: calc(650/1220 * 100%);
+    width: calc(650 / 1220 * 100%);
   }
 
   .example__price {

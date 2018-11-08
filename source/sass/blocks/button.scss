@@ -24,7 +24,7 @@
 
     &:active {
       background-color: darken($primary, 3%);
-      color: rgba(#fff, 0.3);
+      color: rgba(#ffffff, 0.3);
     }
   }
 
@@ -43,6 +43,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .button {
     line-height: 20px;

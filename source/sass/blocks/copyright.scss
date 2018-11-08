@@ -39,11 +39,13 @@
     opacity: 0.3;
   }
 }
+
 @media (min-width: 400px) {
   .copyright__link {
     max-width: 160px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .copyright {
     text-align: right;

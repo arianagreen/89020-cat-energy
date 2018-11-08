@@ -30,7 +30,7 @@
 
   &::after,
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 2px;
     top: -6px;
@@ -67,6 +67,7 @@
   padding-bottom: 22px;
   @include border;
 }
+
 @media (min-width: $tablet-width) {
   .programs {
     margin-bottom: 66px;
@@ -90,6 +91,7 @@
     border-bottom: none;
   }
 }
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .programs__content {
     position: relative;
@@ -130,6 +132,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .programs {
     @include desktop-container;
