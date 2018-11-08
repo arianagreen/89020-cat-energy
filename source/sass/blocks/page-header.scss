@@ -33,11 +33,11 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin-bottom: 58px;
+    margin-bottom: 56px;
     padding-top: 25px;
 
     &--form {
-      margin-bottom: 43px;
+      margin-bottom: 56px;
     }
   }
 
@@ -67,15 +67,12 @@
   .page-header {
     width: 100%;
     padding-top: 55px;
+    margin-bottom: 73px;
 
     &--index {
       z-index: 2;
       position: absolute;
       top: 0;
-    }
-
-    &--catalog {
-      margin-bottom: 72px;
     }
   }
 
