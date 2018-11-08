@@ -43,14 +43,9 @@
     }
   }
 }
-
 @media (min-width: $tablet-width) {
   .button {
     line-height: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 26px;
-    padding-right: 29px;
+    padding: 16px 29px 16px 26px;
   }
-
 }

@@ -26,7 +26,6 @@
     }
   }
 }
-
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -35,7 +34,6 @@
   }
 
   .site-list__item {
-
     &:not(:last-child) {
       margin-right: 40px;
     }
@@ -65,9 +63,7 @@
     }
   }
 }
-
 @media (min-width: $desktop-width) {
-
   .site-list--light {
     .site-list__item {
       a {
@@ -84,8 +80,6 @@
     }
   }
 
-
-
   .site-list__item {
     &:not(:last-child) {
       margin-right: 34px;
@@ -95,5 +89,4 @@
       font-size: 20px;
     }
   }
-
 }

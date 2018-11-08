@@ -4,10 +4,7 @@
 }
 
 .page-footer__footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 .page-footer__item {
@@ -39,7 +36,6 @@
     margin-top: 17px;
   }
 }
-
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: 70px;
@@ -81,7 +77,6 @@
     width: 27%;
   }
 }
-
 @media (min-width: $desktop-width) {
   .page-footer {
     margin-top: 80px;

@@ -24,19 +24,12 @@
 
 .stats__field {
   position: absolute;
-  // left: 18px;
-  // right: 18px;
-
   bottom: -16px;
   margin-top: 0;
   margin-bottom: 0;
-  // padding-left: 10px;
-  // padding-right: 10px;
-  // background-color: $secondary;
   font-family: $font-text;
   font-size: 12px;
   line-height: 12px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,8 +46,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stats {
-  }
+  .stats {}
 
   .stats__item {
     width: 162px;

@@ -38,7 +38,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
   }
@@ -49,35 +48,35 @@
     border: none;
   }
 }
-
 @media (min-width: 500px) {
   .contacts__map {
     background-image: url("../img/bg-map-tablet@1x.png");
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
     }
   }
 }
-
 @media (min-width: $tablet-width) {
-
   .contacts__info {
     box-sizing: border-box;
     align-items: center;
     @include tablet-container;
     min-height: 201px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 46px;
-    padding-bottom: 40px;
+    padding: 46px 40px 40px;
     margin: auto;
   }
+  @media all and (-ms-high-contrast:none) {
+    .contacts__info {
+      padding-top: 60px;
+    }
+    /* IE10 */
+    *::-ms-backdrop,
+    .contacts__info {
+      padding-top: 60px;
+    }
+    /* IE11 */
+  }
 
-  @media all and (-ms-high-contrast:none){
-     .contacts__info { padding-top: 60px; } /* IE10 */
-     *::-ms-backdrop, .contacts__info { padding-top: 60px; } /* IE11 */
-}
   .contacts__invitation {
     font-size: 20px;
     line-height: 25px;
@@ -89,6 +88,7 @@
     // padding-right: 40px;
     text-align: right;
   }
+
   .contacts__city {
     margin-top: 20px;
     align-self: flex-end;
@@ -102,17 +102,14 @@
     }
   }
 }
-
 @media (min-width: 950px) {
   .contacts__map {
     background-image: url("../img/bg-map-desktop@1x.png");
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
@@ -126,8 +123,6 @@
     align-items: center;
     box-sizing: border-box;
     position: absolute;
-    // width: 570px;
-    // width: calc(#{$desktop-content-width} / 2 - #{$desktop-padding});
     top: 50%;
     right: 50%;
     margin-right: 40px;
@@ -155,7 +150,6 @@
   .contacts__map {
     height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
     }

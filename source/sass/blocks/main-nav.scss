@@ -44,10 +44,8 @@
     margin-top: -1px;
   }
 }
-
 @media (max-width: $mobile-width-only) {
   .main-nav {
-
     &--closed {
       .main-nav__wrapper {
         visibility: hidden;
@@ -74,7 +72,6 @@
     }
   }
 }
-
 @media (min-width: $tablet-width) {
   .main-nav {
     max-width: 72%;
@@ -89,10 +86,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    transition: height .2s;
+    transition: height 0.2s;
   }
 }
-
 @media (min-width: $desktop-width) {
   .main-nav {
     max-width: 74%;

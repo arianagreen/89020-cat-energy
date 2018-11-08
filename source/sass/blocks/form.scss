@@ -103,7 +103,7 @@
 
   &--invalid {
     border-color: #ff8282;
-    box-shadow: 0px 0px 0px 1px #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
 
     & + .form__icon {
       fill: #ff8282;
@@ -214,16 +214,13 @@ input[type="checkbox"]:checked + .form__indicator {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 @media (min-width: $tablet-width) {
-
   .form__main {
     margin-bottom: 74px;
+
     .form__fieldset:last-of-type {
       margin-bottom: 0;
     }
-
-
   }
 
   .form__fieldset--bb {
@@ -296,7 +293,7 @@ input[type="checkbox"]:checked + .form__indicator {
   }
 
   .form__input {
-    padding: 10px 20px 10px;
+    padding: 10px 20px;
 
     &--textarea {
       padding: 14px 18px 17px;
@@ -316,14 +313,12 @@ input[type="checkbox"]:checked + .form__indicator {
       }
     }
   }
-
   // .form__label {
   //   sup {
   //     top: -0.3em;
   //     padding-right: 2px;
   //   }
   // }
-
   .form__indicator {
     margin-right: 20px;
     height: 40px;
@@ -359,8 +354,8 @@ input[type="checkbox"]:checked + .form__indicator {
     padding-right: 40px;
   }
 
-  .form__submit-wrapper,
-  .form__prompt {
+  .form__prompt,
+  .form__submit-wrapper {
     box-sizing: border-box;
     width: 50%;
     margin: 0;
@@ -382,9 +377,7 @@ input[type="checkbox"]:checked + .form__indicator {
     }
   }
 }
-
 @media (min-width: $desktop-width) {
-
   .form__fieldset,
   .form__footer {
     @include desktop-container;
@@ -414,7 +407,7 @@ input[type="checkbox"]:checked + .form__indicator {
       padding-left: 28px;
       padding-right: 28px;
       padding-bottom: 23px;
-      margin: 0px;
+      margin: 0;
     }
 
     &--owner {
@@ -433,14 +426,13 @@ input[type="checkbox"]:checked + .form__indicator {
     &--columns {
       margin-left: -$desktop-padding;
       margin-right: -$desktop-padding;
+
       .form__group {
         width: 25%;
         padding-left: $desktop-padding;
         padding-right: $desktop-padding;
       }
     }
-
-
   }
 
   .form__main {
@@ -475,8 +467,8 @@ input[type="checkbox"]:checked + .form__indicator {
     padding-right: 0;
   }
 
-  .form__submit-wrapper,
-  .form__prompt {
+  .form__prompt,
+  .form__submit-wrapper {
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
   }

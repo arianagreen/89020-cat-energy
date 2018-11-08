@@ -23,7 +23,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -56,21 +56,17 @@ a {
   &--decor {
     display: flex;
     align-items: flex-start;
-
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
 
     &::after {
       content: "";
-
       flex-grow: 1;
       flex-shrink: 0;
-
       min-width: 20px;
       height: 3px;
       margin-top: 14px;
-
       background: $primary;
     }
   }
@@ -106,8 +102,9 @@ a {
 
 .logo[href] {
   transition: opacity 0.2s;
-  &:hover,
-  &:focus {
+
+  &:focus,
+  &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
@@ -121,7 +118,6 @@ sup {
   top: 0;
   font-size: 16px;
 }
-
 @media (min-width: $tablet-width) {
   body {
     font-size: 16px;
@@ -152,7 +148,6 @@ sup {
       display: block;
       font-size: 36px;
       line-height: 36px;
-
       position: relative;
       text-transform: none;
 
@@ -171,7 +166,6 @@ sup {
     &--catalog {
       margin-bottom: 80px;
     }
-
   }
 
   .h2__content {
@@ -186,7 +180,6 @@ sup {
     padding-right: 37px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .h1 {
     @include desktop-container;

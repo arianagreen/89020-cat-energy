@@ -67,9 +67,7 @@
   padding-bottom: 22px;
   @include border;
 }
-
 @media (min-width: $tablet-width) {
-
   .programs {
     margin-bottom: 66px;
     @include tablet-container;
@@ -92,24 +90,19 @@
     border-bottom: none;
   }
 }
-
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-
   .programs__content {
     position: relative;
-    padding-top: 75px;
-    padding-right: 40%;
-    padding-left: 53px;
-    padding-bottom: 57px;
+    padding: 75px 40% 57px 53px;
   }
 
   .programs__title {
     position: static;
     padding-left: 0;
 
-    &::before,
-    &::after {
-      top:50%;
+    &::after,
+    &::before {
+      top: 50%;
       transform: translateY(-50%);
       left: auto;
       right: 60px;
@@ -123,7 +116,6 @@
         height: 194px;
         margin-top: -10px;
       }
-
     }
 
     &--pro {
@@ -136,22 +128,21 @@
         padding-right: 31px;
       }
     }
-
-
   }
 }
-
 @media (min-width: $desktop-width) {
   .programs {
     @include desktop-container;
     margin-bottom: 74px;
   }
+
   .programs__list {
     display: flex;
     margin-left: -40px;
     margin-right: -40px;
     margin-bottom: -30px;
   }
+
   .programs__item {
     display: flex;
     align-items: stretch;
@@ -164,18 +155,15 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 76px;
-    padding-left: 52px;
-    padding-right: 50px;
-    padding-bottom: 60px;
+    padding: 76px 50px 60px 52px;
   }
 
   .programs__title {
     margin-bottom: 75px;
     padding-left: 162px;
 
-    &::before,
-    &::after {
+    &::after,
+    &::before {
       top: -30px;
       height: 100px;
       width: 100px;

@@ -20,8 +20,8 @@
   font-size: 16px;
   line-height: 20px;
 
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 14px;
@@ -52,7 +52,6 @@
 .show-more__show-all {
   width: 100%;
 }
-
 @media (min-width: $tablet-width) {
   .show-more {
     padding-top: 83px;
@@ -76,11 +75,8 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    padding: 38px;
-    padding-top: 53px;
+    padding: 53px 38px 38px;
     border: 1px solid $gray-medium;
-
-
   }
 
   .show-more__extend {
@@ -88,9 +84,8 @@
     font-size: 20px;
     line-height: 20px;
 
-
-    &::before,
-    &::after {
+    &::after,
+    &::before {
       width: 60px;
       top: 29px;
       margin-left: -30px;
@@ -109,7 +104,6 @@
     padding-bottom: 9px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .show-more {
     padding-left: 40px;
